@@ -1,22 +1,22 @@
 ---
 layout: default
 ---
-<h1 style="color: green;">INTRODUCTION</h1>
+<h2 style="color: green;">INTRODUCTION</h2>
 
 <h2 style="color: blue;">-Context</h2>
 
 ArCo: the knowledge Graph of the Italian Cultural Heritage
 Large Language Models : Gemini and ChaptGPT
 
-<h3 style="color: blue;">-Team</h3>
+<h2 style="color: blue;">-Team</h2>
 
 Sara Speggiorin & Sara Paglia 
 
-<h4 style="color: blue;">-Topic</h4> 
+<h2 style="color: blue;">-Topic</h2> 
 
 Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-Apollo_ 
 
-<h5 style="color: blue;">-Purpose</h5>
+<h2 style="color: blue;">-Purpose</h2>
 
 - Exploring the ArCo Ontology to find the two cultural properties. 
 - Enriching Arco Knowledge Graph with futher details about the two cultural properties. 
