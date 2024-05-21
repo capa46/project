@@ -41,16 +41,26 @@ _External resources_: Google
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
 PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+
 PREFIX agent: <https://w3id.org/arco/resource/Agent/>
 
+
 SELECT DISTINCT ?cp
+
 WHERE {
+
 ?cp a arco:HistoricOrArtisticProperty ;
+
 rdfs:label ?l .
+
 FILTER(REGEX(?l, "tondo doni", "i"))
+
 }
+
 LIMIT 20
 
 Result:
@@ -60,16 +70,26 @@ Result:
 - _Step 2_: We are curious to know more about Michelangelo's artwork _La Pietà_. We therefore explore ArCo by using the following query:
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
 PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+
 PREFIX agent: <https://w3id.org/arco/resource/Agent/>
 
+
 SELECT DISTINCT ?culturalProperty
+
 WHERE {
+
 ?culturalProperty a arco:HistoricOrArtisticProperty ;
+
 a-cd:hasAuthor agent:56d8ee32618291c12ae4f357db49c221 ;
+
 rdfs:label ?l .
+
 FILTER(REGEX(?l, "pietà", "i"))
+
 }
 
 We employ the keyword DISTINCT to eliminate duplicates and by doing so we get 7 results. Among them, we selct the artwork _Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)_, from which we retrieve the cultural property's IRI and the 2nd author's (Halm Peter Von) IRI.
@@ -95,10 +115,14 @@ ChatGPT provides us with a wrong answer, while Gemini answers correctly:_The rec
 
 **Prompting techniques:**
 We want to transform the new-found information into RDF format to build a triple and to do so we apply the Chain of Thought prompting technique, both in Gemini and ChatGPT.
+
 -Chain of Thought prompt:
 The Doni Tondo or Doni Madonna is kept in the Uffizi in Florence, Italy.
+
 RDF format: IRI Doni Tondo = https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900287181 
+
 is kept in = a-loc:hasCulturalInstituteOrSite = https://w3id.org/arco/ontology/location/hasCulturalInstituteOrSite 
+
 IRI Galleria degli Uffizi = https://w3id.org/arco/resource/CulturalInstituteOrSite/68ea75fb6946df92f9c6a6fa98a5d1f3 
 
 HistoricOrArtisticProperty:0900287181 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite:68ea75fb6946df92f9c6a6fa98a5d1f3
