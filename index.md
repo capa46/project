@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-
-**INTRODUCTION**
+<h1 style="color: blue;">**INTRODUCTION**</h1>
 
 -**Context** 
 
