@@ -31,6 +31,18 @@ Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-A
 3.  Discussion. [Vai alla pagina informazioni](another-page.md)
 4.  Conclusions and possible future developments. 
 
+
+
+
+
+
+
+
+
+
+
+
+<a name="custom-anchor"></a>
 ## **1. METHODOLOGY**
 
 _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology and Knowledge Graph
@@ -278,7 +290,7 @@ After analysing the data, we focus our attention on the property _a-cd:hasCommis
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
-<a name="custom-anchor"></a>
+
 ### Definition lists can be used with HTML syntax.
 
 <dl>
