@@ -49,8 +49,8 @@ _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology an
 
 _External resources_: Google
 
-
-**Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)**
+<h1 style="background-color: yellow;">**Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)**
+</h1>
 
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
 
@@ -302,5 +302,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 
 <a name="m-anchor"></a>
-4.  Conclusions and possible future developments. 
-```
+4.  Conclusions and possible future developments
