@@ -116,18 +116,30 @@ Since the triple's structure proposed by ChatGPT is correct, we want to use it a
 We focus our query on the cultural properties located in Vercelli and authored by both Michelangelo and Halm Peter Von by using the keyword UNION:
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>  
+
 PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/> 
+
 PREFIX agent: <https://w3id.org/arco/resource/Agent/> 
+
 PREFIX cis: <http://dati.beniculturali.it/cis/> 
  
+
 SELECT DISTINCT ?place 
+
 WHERE { 
+
 ?place a cis:GeographicalFeature 
+
 { ?place rdfs:label "Vercelli" } 
+
 ?culturalProperty a arco:HistoricOrArtisticProperty 
+
 { ?culturalProperty a-cd:hasAuthor agent:56d8ee32618291c12ae4f357db49c221 } 
+
 UNION {?culturalProperty a-cd:hasAuthor agent:8603b17b6451202a8d27734812dae423} 
+
 }
 
 
