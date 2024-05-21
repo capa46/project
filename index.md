@@ -27,7 +27,7 @@ Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-A
 **Index**
 
 1.  Methodology [vai alla sezione importante](# **1.-METHODOLOGY**)
-2.  Results and analysis.
+2.  Results and analysis. [vai alla sezione importante](#**-Results and analysis:**)
 3.  Discussion.
 4.  Conclusions and possible future developments. 
 
@@ -177,7 +177,7 @@ We get a single result, which corresponds to _a cis:GeographicalFeature_ and ret
 
 <a href= "https://w3id.org/arco/resource/GeographicalFeature/39d1317c461740217063d916af2248bb">IRI of Vercelli</a>
 
-**-Results and analysis:**
+##**-Results and analysis:**
 
 Consequently, it can be said that there is no IRI for the Istituto di Belle Arti of Vercelli. For this reason, we would suggest to create a new IRI for this institute in order to have the possibility to use it for the following triple and enhance the knowledge graph:
 
