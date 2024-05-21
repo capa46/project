@@ -6,6 +6,7 @@ layout: default
 <h2 style="color: blue;">-Context</h2>
 
 ArCo: the knowledge Graph of the Italian Cultural Heritage
+
 Large Language Models : Gemini and ChaptGPT
 
 <h2 style="color: blue;">-Team</h2>
@@ -27,8 +28,8 @@ Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-A
 
 1.  [Methodology](#custom-anchor)
 2.  [Results and analysis](#c-anchor)
-3.  Discussion. [Vai alla pagina informazioni](another-page.md)
-4.  Conclusions and possible future developments. 
+3.  [Discussion](another-page.md)
+4.  [Conclusions and possible future developments](#m-anchor)
 
 
 
@@ -248,16 +249,7 @@ After analysing the data, we focus our attention on the property _a-cd:hasCommis
 
 
 
-### There's a horizontal rule below this.
 
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
 
 ### And an ordered list:
 
@@ -309,6 +301,6 @@ After analysing the data, we focus our attention on the property _a-cd:hasCommis
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
-```
-The final element.
+<a name="m-anchor"></a>
+4.  Conclusions and possible future developments. 
 ```
