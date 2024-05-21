@@ -26,7 +26,7 @@ Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-A
 
 **Index**
 
-1.  Methodology [vai alla sezione importante](# **1.-METHODOLOGY**)
+1.  [Methodology](#custom-anchor)
 2.  Results and analysis. [Vai alla Sezione con Ancora Personalizzata](#custom-anchor)
 3.  Discussion. [Vai alla pagina informazioni](another-page.md)
 4.  Conclusions and possible future developments. 
