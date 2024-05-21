@@ -38,7 +38,7 @@ _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology an
 _External resources_: Google
 
 
-_Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
+- _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>
@@ -53,11 +53,11 @@ FILTER(REGEX(?l, "tondo doni", "i"))
 }
 LIMIT 20
 
-- Result:
+Result:
 <a href= "https://w3id.org/arco/resource/Agent/56d8ee32618291c12ae4f357db49c221">IRI Michelangelo</a>
 
 
-_Step 2_: We are curious to know more about Michelangelo's artwork _La Pietà_. We therefore explore ArCo by using the following query:
+- _Step 2_: We are curious to know more about Michelangelo's artwork _La Pietà_. We therefore explore ArCo by using the following query:
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>
@@ -72,10 +72,20 @@ rdfs:label ?l .
 FILTER(REGEX(?l, "pietà", "i"))
 }
 
-- We employ the keyword DISTINCT to eliminate duplicates and by doing so we get 7 results. Among them, we selct the artwork _Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)_, from which we retrieve the cultural property's IRI and the 2nd author's (Halm Peter Von) IRI.
-- Result
-<a href= "https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100214952">IRI La Pietà</a>
+We employ the keyword DISTINCT to eliminate duplicates and by doing so we get 7 results. Among them, we selct the artwork _Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)_, from which we retrieve the cultural property's IRI and the 2nd author's (Halm Peter Von) IRI.
+Result:
+<a href= "https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100214952">IRI Pietà (stampa)</a>
 <a href= "https://w3id.org/arco/resource/Agent/8603b17b6451202a8d27734812dae423">IRI Halm Peter Von</a>
+
+- _Step 3_
+**Prompting techniques:**
+  We use the LLMs Gemini and ChatGPT in order to enrich the information regarding the location of the artwork _Pietà (stampa)_:
+  -ChatGPT  
+  ![Screenshot 2024-05-18 162547](https://github.com/capa46/project/assets/170355893/2dd708ce-1138-491c-bb66-7a9f1992b720)
+  -Gemini
+  ![Screenshot 2024-05-20 180602](https://github.com/capa46/project/assets/170355893/f8f97a16-d626-4d72-aa6a-bf3305ada753)
+
+
 
 ### There's a horizontal rule below this.
 
