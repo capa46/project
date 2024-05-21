@@ -97,16 +97,20 @@ Result:
 <a href= "https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100214952">IRI Pietà (stampa)</a>
 <a href= "https://w3id.org/arco/resource/Agent/8603b17b6451202a8d27734812dae423">IRI Halm Peter Von</a>
 
+
 - _Step 3_
 
 **-Prompting techniques:**
 We use the LLMs Gemini and ChatGPT in order to enrich the information regarding the location of the artwork _Pietà (stampa)_:
+
 -ChatGPT  
   ![Screenshot 2024-05-18 162547](https://github.com/capa46/project/assets/170355893/2dd708ce-1138-491c-bb66-7a9f1992b720)
+
 -Gemini
   ![piet](https://github.com/capa46/project/assets/170355893/6a7d744e-c658-45ff-ae39-43b6a1974af2)
 
 We use the zero-shot prompting technique starting from the question _Could you please tell me the exact place in which the stamp 'Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)' is kept?_.
+
 **-Results and analysis:**
 ChatGPT provides us with a wrong answer, while Gemini answers correctly:_The record specifies that the print "Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)" is kept at the Istituto di Belle Arti (Institute of Fine Arts) located on Via Duomo, 17, Vercelli (VC), Italy [source:catalogo.beniculturali.it]_.
 
@@ -133,6 +137,7 @@ _Based on the previous example that I gave you, could you transform the followin
 Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same prompt and it provides a correct answer as it is able to create a triple, even though it uses wrong IRIs, that is Halm Peter Von's IRI and the Istituto di Belle Arti's IRI.
 ![Screenshot 2024-05-18 170720](https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c)
 ![Screenshot 2024-05-18 170804](https://github.com/capa46/project/assets/170355893/e26bba28-7f13-4353-a74d-fbd37e3c218c)
+
 
 - _Step 5_
 
@@ -165,6 +170,20 @@ WHERE {
 UNION {?culturalProperty a-cd:hasAuthor agent:8603b17b6451202a8d27734812dae423} 
 
 }
+
+We get a single result, which corresponds to _a cis:GeographicalFeature_ and returns the Iri of Vercelli
+
+<a href= "https://w3id.org/arco/resource/GeographicalFeature/39d1317c461740217063d916af2248bb">IRI of Vercelli</a>
+
+**-Results and analysis:**
+
+Consequently, it can be said that there is no IRI for the Istituto di Belle Arti of Vercelli. For this reason, we would suggest to create a new IRI for this institute in order to have the possibility to use it for the following triple and enhance the knowledge graph:
+
+_HistoricOrArtisticProperty:0100214952 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite:XXX_
+
+This triple links the Michelangelo and Halm Peter Von's artwork to its location, that is, the Instituto di Belle Arti of Vercelli, thanks to the property _a-loc:hasCulturalInstituteOrSite_.
+
+
 
 
 
