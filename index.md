@@ -52,7 +52,7 @@ FILTER(REGEX(?l, "tondo doni", "i"))
 }
 LIMIT 20
 
-- Result: <p>
+- Result:
 <a href= "https://w3id.org/arco/resource/Agent/56d8ee32618291c12ae4f357db49c221">IRI Michelangelo</a>
 
 ### There's a horizontal rule below this.
