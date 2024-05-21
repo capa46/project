@@ -26,22 +26,34 @@ Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-A
 
 **Index**
 
-1.  
-       <p>
-      <a href="https://github.com/capa46/project/blob/bd0aad5143ca12523bafdffbbf55a4e521ce3fd9/another-page.md/">Methodology</a> 
-    </p>
+1.  Methodology
 2.  Results and analysis.
 3.  Discussion.
 4.  Conclusions and possible future developments. 
 
-###### Header 6
+**1. Methodology**
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+_Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology and Knowledge Graph
+
+_External resources_: Google
+
+_Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+PREFIX agent: <https://w3id.org/arco/resource/Agent/>
+
+SELECT DISTINCT ?cp
+WHERE {
+?cp a arco:HistoricOrArtisticProperty ;
+rdfs:label ?l .
+FILTER(REGEX(?l, "tondo doni", "i"))
+}
+LIMIT 20
+
+- Result: <p>
+<a href= "https://w3id.org/arco/resource/Agent/56d8ee32618291c12ae4f357db49c221">IRI Michelangelo</a>
 
 ### There's a horizontal rule below this.
 
