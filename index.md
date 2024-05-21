@@ -27,7 +27,7 @@ Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-A
 **Index**
 
 1.  Methodology [vai alla sezione importante](# **1.-METHODOLOGY**)
-2.  Results and analysis. [vai alla sezione importante](#Results-and-analysis)
+2.  Results and analysis. [Vai alla Sezione con Ancora Personalizzata](#custom-anchor)
 3.  Discussion.
 4.  Conclusions and possible future developments. 
 
@@ -278,6 +278,7 @@ After analysing the data, we focus our attention on the property _a-cd:hasCommis
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
+<a name="custom-anchor"></a>
 ### Definition lists can be used with HTML syntax.
 
 <dl>
