@@ -49,7 +49,7 @@ _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology an
 
 _External resources_: Google
 
-<h4 style="background-color:green ;">Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)</h4>
+<h4 style="background-color:yellow ;">Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)</h4>
 
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
 
