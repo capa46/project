@@ -78,22 +78,24 @@ Result:
 <a href= "https://w3id.org/arco/resource/Agent/8603b17b6451202a8d27734812dae423">IRI Halm Peter Von</a>
 
 - _Step 3_
-  **-Prompting techniques:**
-  We use the LLMs Gemini and ChatGPT in order to enrich the information regarding the location of the artwork _Pietà (stampa)_:
-  -ChatGPT  
+
+**-Prompting techniques:**
+We use the LLMs Gemini and ChatGPT in order to enrich the information regarding the location of the artwork _Pietà (stampa)_:
+-ChatGPT  
   ![Screenshot 2024-05-18 162547](https://github.com/capa46/project/assets/170355893/2dd708ce-1138-491c-bb66-7a9f1992b720)
-  -Gemini
+-Gemini
   ![piet](https://github.com/capa46/project/assets/170355893/6a7d744e-c658-45ff-ae39-43b6a1974af2)
 
-  We use the zero-shot prompting technique starting from the question _Could you please tell me the exact place in which the stamp 'Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)' is kept?_.
-  **-Results and analysis:**
-  ChatGPT provides us with a wrong answer, while Gemini answers correctly:_The record specifies that the print "Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)" is kept at the Istituto di Belle Arti (Institute of Fine Arts) located on Via Duomo, 17, Vercelli (VC), Italy [source:catalogo.beniculturali.it]_.
+We use the zero-shot prompting technique starting from the question _Could you please tell me the exact place in which the stamp 'Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)' is kept?_.
+**-Results and analysis:**
+ChatGPT provides us with a wrong answer, while Gemini answers correctly:_The record specifies that the print "Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)" is kept at the Istituto di Belle Arti (Institute of Fine Arts) located on Via Duomo, 17, Vercelli (VC), Italy [source:catalogo.beniculturali.it]_.
 
 
 - _Step 4_
-  **Prompting techniques:**
-  We want to transform the new-found information into RDF format to build a triple and to do so we apply the Chain of Thought prompting technique, both in Gemini and ChatGPT.
-  -Chain of Thought prompt:
+
+**Prompting techniques:**
+We want to transform the new-found information into RDF format to build a triple and to do so we apply the Chain of Thought prompting technique, both in Gemini and ChatGPT.
+-Chain of Thought prompt:
 The Doni Tondo or Doni Madonna is kept in the Uffizi in Florence, Italy.
 RDF format: IRI Doni Tondo = https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900287181 
 is kept in = a-loc:hasCulturalInstituteOrSite = https://w3id.org/arco/ontology/location/hasCulturalInstituteOrSite 
@@ -109,8 +111,9 @@ Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same pr
 ![Screenshot 2024-05-18 170804](https://github.com/capa46/project/assets/170355893/e26bba28-7f13-4353-a74d-fbd37e3c218c)
 
 - _Step 5_
-  Since the triple's structure proposed by ChatGPT, we want to use and therefore need to substitute the wrong IRIs with the correct ones. That is why we opt for retrieving the IRI of the Istituto di Belle Arti of Vercelli in the ArCo ontology, assuming that it exists.
-  We focus our query on the cultural properties located in Vercelli and authored by both Michelangelo and Halm Peter Von by using the keyword UNION:
+
+Since the triple's structure proposed by ChatGPT is correct, we want to use it and therefore need to substitute the wrong IRIs with the correct ones. That is why we opt for retrieving the IRI of the Istituto di Belle Arti of Vercelli in the ArCo ontology, assuming that it exists.
+We focus our query on the cultural properties located in Vercelli and authored by both Michelangelo and Halm Peter Von by using the keyword UNION:
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>  
