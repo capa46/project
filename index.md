@@ -217,9 +217,9 @@ FILTER(REGEX(?l, "david", "i"))
 
 LIMIT 10
 
-Among the results, we choose the _David-Apollo_ statue with <a href= "https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607">IRI</a>.
+Among the results, we choose the _David-Apollo_ statue with <a href= "https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607">this IRI</a>.
 
-After analysing the data, we focus our attention on the property _a-cd:hasCommission_ that refers to _Committenza 1 del bene 0900286607_ with <a href= "https://w3id.org/arco/resource/Commission/0900286607-1">IRI</a>.
+After analysing the data, we focus our attention on the property _a-cd:hasCommission_ that refers to _Committenza 1 del bene 0900286607_ with <a href= "https://w3id.org/arco/resource/Commission/0900286607-1">this IRI</a>.
 
 
  
