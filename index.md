@@ -26,12 +26,12 @@ Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-A
 
 **Index**
 
-1.  Methodology
+1.  Methodology [vai alla sezione importante][# **1. METHODOLOGY**]
 2.  Results and analysis.
 3.  Discussion.
 4.  Conclusions and possible future developments. 
 
-**1. METHODOLOGY**
+## **1. METHODOLOGY**
 
 _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology and Knowledge Graph
 
