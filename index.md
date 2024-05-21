@@ -221,6 +221,8 @@ Among the results, we choose the _David-Apollo_ statue with <a href= "https://w3
 
 After analysing the data, we focus our attention on the property _a-cd:hasCommission_ that refers to _Committenza 1 del bene 0900286607_ with <a href= "https://w3id.org/arco/resource/Commission/0900286607-1">this IRI</a>.
 
+<a href= "https://capa46.github.io/project/another-page.html">Methodology</a>
+
 
  
 
