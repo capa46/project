@@ -176,7 +176,7 @@ This triple links the Michelangelo and Halm Peter Von's artwork to its location,
 
 
 <a name="c-anchor"></a>
-**Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)**
+<h4 style="background-color:yellow ;">Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)</h4>
 
 
 - _Step 1_
