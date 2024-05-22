@@ -356,7 +356,7 @@ _A:_
 
 ChatGPT 
 
-<img src="https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f" width="200" height="100">
+<img src="https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f" width="300" height="200">
 
 Gemini
 
