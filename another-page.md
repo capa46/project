@@ -142,7 +142,9 @@ _Based on the previous example that I gave you, could you transform the followin
 **Results and analysis:**
 
 Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same prompt and it provides a correct answer as it is able to create a triple, even though it uses wrong IRIs, that is Halm Peter Von's IRI and the IRI of the Istituto di Belle Arti.
+
 <img src="https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c" width="1000" height="500">
+
 <img src="https://github.com/capa46/project/assets/170109035/c124519e-49f4-43ef-b9a2-98db623f31cc" width="900" height="200"> 
 
 
@@ -356,7 +358,7 @@ _A:_
 
 ChatGPT 
 
-<img src="https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f" width="300" height="200">
+<img src="https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f" width="900" height="200">
 
 Gemini
 
