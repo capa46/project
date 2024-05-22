@@ -228,7 +228,7 @@ After analysing the data, we focus our attention on the property _a-cd:hasCommis
 
 Since the information is not clear enough, we carry out a research on the committent of this statue. On the webpage of the <a href= "http://www.polomuseale.firenze.it/areastampa/files/53185184f1c3bc7c07000000/02%20SALA%20MICHE_PDF.pdf">Museo Nazionale del Bargello</a>, we discover that the committent was Baccio Valori. 
 
--_Step 2_
+- _Step 2_
 
 We now decide to ask ChaptGPT and Gemini to retrieve further information on the committent by using the **self-consistency prompting technique**. We ask the same question three times but formulating it with different words and opening each time a new chat: 
 
@@ -272,7 +272,7 @@ Gemini - Answer 3
 
 We observe that Gemini replies correctly to the two last questions phrased in a more specific way but with different words, which demonstrates its self-consistency. On the other hand, ChatGPT is not coherent because it provides the wrong answer to the third question. Overall, we can hilighlight the fact that both LLMs outputs are not always coherent. 
 
--_Step 3_
+- _Step 3_
 
 We are now interested in finding out in which events the cultural property _David-Apollo_ was involved. To do so, we used the following query.
 
