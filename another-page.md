@@ -116,15 +116,15 @@ We want to transform the new-found information into RDF format to build a triple
 
 - Chain of thought prompt:
 
-The Doni Tondo or Doni Madonna is kept in the Uffizi in Florence, Italy.
+_The Doni Tondo or Doni Madonna is kept in the Uffizi in Florence, Italy._
 
-RDF format: IRI Doni Tondo = https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900287181 
+_RDF format: IRI Doni Tondo = https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900287181_ 
 
-is kept in = a-loc:hasCulturalInstituteOrSite = https://w3id.org/arco/ontology/location/hasCulturalInstituteOrSite 
+_is kept in = a-loc:hasCulturalInstituteOrSite = https://w3id.org/arco/ontology/location/hasCulturalInstituteOrSite_ 
 
-IRI Galleria degli Uffizi = https://w3id.org/arco/resource/CulturalInstituteOrSite/68ea75fb6946df92f9c6a6fa98a5d1f3 
+_IRI Galleria degli Uffizi = https://w3id.org/arco/resource/CulturalInstituteOrSite/68ea75fb6946df92f9c6a6fa98a5d1f3_ 
 
-HistoricOrArtisticProperty:0900287181 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite:68ea75fb6946df92f9c6a6fa98a5d1f3
+_HistoricOrArtisticProperty:0900287181 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite:68ea75fb6946df92f9c6a6fa98a5d1f3_
 
 _Based on the previous example that I gave you, could you transform the following sentence “The record specifies that the print "Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX) is kept at the Istituto di Belle Arti (Institute of Fine Arts) located on Via Duomo, 17, Vercelli (VC), Italy” into RDF format using the ArCo ontology?_
 
@@ -235,9 +235,9 @@ Since the information is not clear enough, we carry out a research on the commit
 We now decide to ask ChaptGPT and Gemini to retrieve further information on the committent by using the **self-consistency prompting technique**. We ask the same question three times but formulating it with different words and opening each time a new chat: 
 
 _Q: Who commissioned the artwork Tondo Doni authored by Michelangelo?
-A: The artwork Tondo Doni was commissioned by a rich merchant named Agnolo Doni.
+A: The artwork Tondo Doni was commissioned by a rich merchant named Agnolo Doni._
 
-Q1: Why was the statue David-Apollo by Michelangelo sculptured?_
+_Q1: Why was the statue David-Apollo by Michelangelo sculptured?_
 
 ChatGPT answer 1
 ![ChatGPT 1](https://github.com/capa46/project/assets/170109035/93b1246f-3268-48e1-a8b3-84089d36b0cc)
@@ -248,12 +248,12 @@ Gemini answer 1
  The answer provided by Gemini is wrong and murky. On the other hand, the one given by ChaptGPT is correct.
 Thus, we decide to phrase the following questions (2,3) in a more explicit way, but using different words and chats. 
 
-_ Q: Who commissioned the artwork Tondo Doni authored by Michelangelo?
-A: The artwork Tondo Doni was commissioned by a rich merchant named Agnolo Doni.
+_Q: Who commissioned the artwork Tondo Doni authored by Michelangelo?
+A: The artwork Tondo Doni was commissioned by a rich merchant named Agnolo Doni._
 
-Q2: Who commissioned the statue David-Apollo authored by Michelangelo?
+_Q2: Who commissioned the statue David-Apollo authored by Michelangelo?_
 
-Q3: Which organization or person hired Michelangelo to sculpt the statue of David-Apollo? Be detailed._
+_Q3: Which organization or person hired Michelangelo to sculpt the statue of David-Apollo? Be detailed._
 
 
 ChatGPT - Answer 2 
@@ -325,14 +325,14 @@ In order to enrich and improve the structure of the knowledge graph, we had cons
 We want to know how the event _L'ombra del genio. MIchelangelo e l'arte a Firenze 1537-1631_ was reviewed. We apply the **few-shot technique** to the LLMs ChatGPT and Gemini as to find out whether it was successful or not : 
 
 
-_Based on the following examples, tell me if the review about the event "L'ombra del genio. Michelangelo e l'arte a Firenze 1537-1631" reported in the last paragraph is positive or negative. Q: The last novel by J.K. Rowling was really interesting because all the characters were complex and well-developed. // Positive
+_Based on the following examples, tell me if the review about the event "L'ombra del genio. Michelangelo e l'arte a Firenze 1537-1631" reported in the last paragraph is positive or negative. Q: The last novel by J.K. Rowling was really interesting because all the characters were complex and well-developed. // Positive_
 
-The movie Allegiant was delusional because the plot was completely different from what was in the book. // Negative
+_The movie Allegiant was delusional because the plot was completely different from what was in the book. // Negative_
 
-This major international exhibition provides a detailed survey of the art of Florence during the years that Michelangelo and artists employed by the first Medici grand dukes—such as Cellini, Bronzino, and Pontormo—produced celebrated masterpieces. Works by these artists bolstered the wordly power and status of the ruling family and reflected the sophistication and refinement of Florentine court circles, in which high value was placed upon classical aesthetics and scientific learning. Many of the 200 objects in the exhibition—including sculpture, painting, armor, medals, porcelain, and tapestries—have never before traveled out of Florence. Among the objects on view for the first time in the United States are three sculptures by Michelangelo, some of the greatest paintings of the Uffizi and Pitti Galleries, and works from the famed Studiolo (treasure room) of Francesco I in the Palazzo Vecchio.
-The Medici, Michelangelo, and the Art of Late Renaissance Florence is the first major exhibition in North America devoted to this moment of great achievement and artistic innovation, one of the richest periods in the history of art. Before coming to the Art Institute, the exhibition opened at the Strozzi Palace in Florence. After leaving Chicago it will be seen at the Detroit Institute of Arts.//
+_This major international exhibition provides a detailed survey of the art of Florence during the years that Michelangelo and artists employed by the first Medici grand dukes—such as Cellini, Bronzino, and Pontormo—produced celebrated masterpieces. Works by these artists bolstered the wordly power and status of the ruling family and reflected the sophistication and refinement of Florentine court circles, in which high value was placed upon classical aesthetics and scientific learning. Many of the 200 objects in the exhibition—including sculpture, painting, armor, medals, porcelain, and tapestries—have never before traveled out of Florence. Among the objects on view for the first time in the United States are three sculptures by Michelangelo, some of the greatest paintings of the Uffizi and Pitti Galleries, and works from the famed Studiolo (treasure room) of Francesco I in the Palazzo Vecchio._
+_The Medici, Michelangelo, and the Art of Late Renaissance Florence is the first major exhibition in North America devoted to this moment of great achievement and artistic innovation, one of the richest periods in the history of art. Before coming to the Art Institute, the exhibition opened at the Strozzi Palace in Florence. After leaving Chicago it will be seen at the Detroit Institute of Arts.//_ 
 
-A:_
+_A:_
 
 ChatGPT 
 
