@@ -24,7 +24,7 @@ Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-A
 - Retrieving useful information using LLMs.
   
 
-**Index**
+<h2 style="color: blue;">-Index</h2>
 
 1.  [Methodology](#custom-anchor)
 2.  [Results and analysis](#c-anchor)
