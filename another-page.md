@@ -352,7 +352,7 @@ ChatGPT
 
 Gemini
 
-<img src="https://github.com/capa46/project/assets/170109035/7b378822-50fb-45c0-b23c-ad00307249f5" width="900" height="100">
+![YY](https://github.com/capa46/project/assets/170109035/c216c698-902c-4d59-bf39-bf85e52dc0c1)
 
 Both LLMs reply correctly to our prompting and understant that the event was successful. 
 
