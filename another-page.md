@@ -302,10 +302,10 @@ WHERE{
   l0:name ?eventName .
   
   ?culturalProperty a-cd:hasAuthor agent:56d8ee32618291c12ae4f357db49c221 ;
- 
-                    a arco:HistoricOrArtisticProperty ;
   
-                    rdfs:label ?l .
+   a arco:HistoricOrArtisticProperty ;
+   
+   rdfs:label ?l .
                              
 FILTER(REGEX(?l, "david-apollo", "i"))
 
@@ -325,14 +325,14 @@ In order to enrich and improve the structure of the knowledge graph, we had cons
 We want to know how the event _L'ombra del genio. MIchelangelo e l'arte a Firenze 1537-1631_ was reviewed. We apply the **few-shot technique** to the LLMs ChatGPT and Gemini as to find out whether it was successful or not : 
 
 
-_ Based on the following examples, tell me if the review about the event "L'ombra del genio. Michelangelo e l'arte a Firenze 1537-1631" reported in the last paragraph is positive or negative. Q: The last novel by J.K. Rowling was really interesting because all the characters were complex and well-developed. // Positive
+_Based on the following examples, tell me if the review about the event "L'ombra del genio. Michelangelo e l'arte a Firenze 1537-1631" reported in the last paragraph is positive or negative. Q: The last novel by J.K. Rowling was really interesting because all the characters were complex and well-developed. // Positive
 
 The movie Allegiant was delusional because the plot was completely different from what was in the book. // Negative
 
 This major international exhibition provides a detailed survey of the art of Florence during the years that Michelangelo and artists employed by the first Medici grand dukes—such as Cellini, Bronzino, and Pontormo—produced celebrated masterpieces. Works by these artists bolstered the wordly power and status of the ruling family and reflected the sophistication and refinement of Florentine court circles, in which high value was placed upon classical aesthetics and scientific learning. Many of the 200 objects in the exhibition—including sculpture, painting, armor, medals, porcelain, and tapestries—have never before traveled out of Florence. Among the objects on view for the first time in the United States are three sculptures by Michelangelo, some of the greatest paintings of the Uffizi and Pitti Galleries, and works from the famed Studiolo (treasure room) of Francesco I in the Palazzo Vecchio.
 The Medici, Michelangelo, and the Art of Late Renaissance Florence is the first major exhibition in North America devoted to this moment of great achievement and artistic innovation, one of the richest periods in the history of art. Before coming to the Art Institute, the exhibition opened at the Strozzi Palace in Florence. After leaving Chicago it will be seen at the Detroit Institute of Arts.//
 
-A: _
+A:_
 
 ChatGPT 
 
@@ -375,7 +375,7 @@ FILTER(REGEX(?slabel,"david", "i"))
 
 ORDER BY ASC (?sub)
 
-Result:<a href= "https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427>IRI of David</a>
+Result:<a href= "https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427">IRI of David</a>
 
 QUERY 7
 
@@ -402,7 +402,7 @@ FILTER(REGEX(?slabel,"apollo", "i"))
 
 ORDER BY ASC (?sub)
 
-Result: <a href= "https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600>IRI of Apollo</a>
+Result: <a href= "https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600">IRI of Apollo</a>
 
 Now that we have the two single IRIs, we are able to create triples that allow us to link the statue _David-Apollo_ to the two single subjects: 
 
