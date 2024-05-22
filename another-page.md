@@ -12,7 +12,7 @@
 
 <div style="margin-top: 100px;"></div> 
 
-### **METHODOLOGY** (H3)
+### **METHODOLOGY**
 
 
 _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology and Knowledge Graph
