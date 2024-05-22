@@ -356,7 +356,7 @@ _A:_
 
 ChatGPT 
 
-<img src="https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f" width="900" height="400">
+<img src="https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f" width="200" height="100">
 
 Gemini
 
@@ -440,6 +440,7 @@ https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca442
 https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607  a-cd:hasSubject 
 
 https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600
+
 
 
 - _Step 6_
