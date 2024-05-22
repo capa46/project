@@ -1,4 +1,3 @@
-
 **INDEX**
 
 1. [Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)](#custom-anchor)
@@ -13,7 +12,7 @@
 
 <div style="margin-top: 50px;"></div> 
 
-### Subsection 1.1 (H3)
+
 **METHODOLOGY**
 
 _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology and Knowledge Graph
@@ -102,7 +101,7 @@ We use the LLMs Gemini and ChatGPT in order to enrich the information regarding 
   <img src="https://github.com/capa46/project/assets/170355893/2dd708ce-1138-491c-bb66-7a9f1992b720" width="800" height="400">
 
 -Gemini
-  ![piet](https://github.com/capa46/project/assets/170355893/6a7d744e-c658-45ff-ae39-43b6a1974af2)
+  <img src="https://github.com/capa46/project/assets/170355893/6a7d744e-c658-45ff-ae39-43b6a1974af2" width="800" height="400">
 
 We use the **zero-shot prompting technique** starting from the question _Could you please tell me the exact place in which the stamp 'Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)' is kept?_.
 
@@ -134,8 +133,8 @@ _Based on the previous example that I gave you, could you transform the followin
 **Results and analysis:**
 
 Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same prompt and it provides a correct answer as it is able to create a triple, even though it uses wrong IRIs, that is Halm Peter Von's IRI and the IRI of the Istituto di Belle Arti.
-![Screenshot 2024-05-18 170720](https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c)
-![Screenshot 2024-05-18 170804](https://github.com/capa46/project/assets/170355893/e26bba28-7f13-4353-a74d-fbd37e3c218c)
+<img src="https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c" width="800" height="400">
+<img src="https://github.com/capa46/project/assets/170355893/e26bba28-7f13-4353-a74d-fbd37e3c218c" width="800" height="400"> 
 
 
 - _Step 5_
@@ -193,7 +192,7 @@ This triple links the Michelangelo and Halm Peter Von's artwork to its location 
 <a name="c-anchor"></a>
 <h4 style="background-color:yellow ;">2. Cultural Property "David-Apollo", Michelangelo Buonarroti (sec. XVI)</h4>
 
-![David-Apollo](https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be)
+<img src="https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be" width="200" height="250">
 
 - _Step 1_
 
@@ -243,10 +242,10 @@ A: The artwork Tondo Doni was commissioned by a rich merchant named Agnolo Doni.
 _Q1: Why was the statue David-Apollo by Michelangelo sculptured?_
 
 ChatGPT answer 1
-![ChatGPT 1](https://github.com/capa46/project/assets/170109035/93b1246f-3268-48e1-a8b3-84089d36b0cc)
+<img src="https://github.com/capa46/project/assets/170109035/93b1246f-3268-48e1-a8b3-84089d36b0cc" width="800" height="400">
 
 Gemini answer 1
-![AA](https://github.com/capa46/project/assets/170109035/c149da8f-082d-4773-8e81-419711a6e053)
+<img src="https://github.com/capa46/project/assets/170109035/c149da8f-082d-4773-8e81-419711a6e053" width="800" height="400"> 
 
  The answer provided by Gemini is wrong and murky. On the other hand, the one given by ChaptGPT is correct.
 Thus, we decide to phrase the following questions (2,3) in a more explicit way, but using different words and chats. 
@@ -260,20 +259,20 @@ _Q3: Which organization or person hired Michelangelo to sculpt the statue of Dav
 
 
 ChatGPT - Answer 2 
-![ChatGPT 2](https://github.com/capa46/project/assets/170109035/0ebb7e19-167e-454a-9a58-fb56ec2539dd)
+<img src="https://github.com/capa46/project/assets/170109035/0ebb7e19-167e-454a-9a58-fb56ec2539dd" width="800" height="400"> 
 
 
 ChatGPT - Answer 3
-![ChatGPT 3](https://github.com/capa46/project/assets/170109035/c3229abe-57f9-4387-964b-1916ea110e57)
+<img src="https://github.com/capa46/project/assets/170109035/c3229abe-57f9-4387-964b-1916ea110e57" width="800" height="400">
 
 
 
 Gemini - Answer 2
-![BB](https://github.com/capa46/project/assets/170109035/f5dc08d6-b0ee-49ce-9d17-acc689b4b4ac)
+<img src="https://github.com/capa46/project/assets/170109035/f5dc08d6-b0ee-49ce-9d17-acc689b4b4ac" width="800" height="400">
 
 
 Gemini - Answer 3 
-![CC](https://github.com/capa46/project/assets/170109035/93ac665b-f562-4711-87c6-506484e2431c)
+<img src="https://github.com/capa46/project/assets/170109035/93ac665b-f562-4711-87c6-506484e2431c" width="800" height="400">
 
 We observe that Gemini replies correctly to the two last questions phrased in a more specific way but with different words, which demonstrates its self-consistency. On the other hand, ChatGPT is not coherent because it provides the wrong answer to the third question. Overall, we can hilighlight the fact that both LLMs outputs are not always coherent. 
 
@@ -317,7 +316,7 @@ FILTER(REGEX(?l, "david-apollo", "i"))
 ORDER BY DESC(?eventName)
 
 
-![PP](https://github.com/capa46/project/assets/170109035/26630734-7c55-40a0-a67b-ec8b25da35b4)
+<img src="https://github.com/capa46/project/assets/170109035/26630734-7c55-40a0-a67b-ec8b25da35b4" width="800" height="400">
 
 As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of events are spelled differently leading the knowledge graph to assume that they are different entities.
 
@@ -339,11 +338,11 @@ _A:_
 
 ChatGPT 
 
-![ChatGPT review](https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f)
+<img src="https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f" width="800" height="400">
 
 Gemini
 
-![99](https://github.com/capa46/project/assets/170109035/7b378822-50fb-45c0-b23c-ad00307249f5)
+<img src="https://github.com/capa46/project/assets/170109035/7b378822-50fb-45c0-b23c-ad00307249f5" width="800" height="400">
 
 Both LLMs reply correctly to our prompting and understant that the event was successful. 
 
