@@ -23,7 +23,7 @@ _External resources_: Google
 <a name="custom-anchor"></a>
 <h4 style="background-color:yellow ;">1. Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Ham Peter Von (sec. XIX)</h4>
 
-<img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="100" height="400">
+<img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250">
 
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
 
@@ -199,7 +199,7 @@ This triple links the Michelangelo and Halm Peter Von's artwork to its location 
 <a name="c-anchor"></a>
 <h4 style="background-color:yellow ;">2. Cultural Property "David-Apollo", Michelangelo Buonarroti (sec. XVI)</h4>
 
-<img src="https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be" width="400" height="300">
+<img src="https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be" width="100" height="400">
 
 - _Step 1_
 
@@ -352,7 +352,7 @@ ChatGPT
 
 Gemini
 
-<img src="https://github.com/capa46/project/assets/170109035/7b378822-50fb-45c0-b23c-ad00307249f5" width="900" height="500">
+<img src="https://github.com/capa46/project/assets/170109035/7b378822-50fb-45c0-b23c-ad00307249f5" width="900" height="300">
 
 Both LLMs reply correctly to our prompting and understant that the event was successful. 
 
