@@ -226,7 +226,11 @@ Among the results, we choose the _David-Apollo_ statue with <a href= "https://w3
 After analysing the data, we focus our attention on the property _a-cd:hasCommission_ that refers to _Committenza 1 del bene 0900286607_ with <a href= "https://w3id.org/arco/resource/Commission/0900286607-1">this IRI</a>.
 
 
-We now decid to ask ChaptGPT and Gemini to retrieve further information on the committent by using the **self-consistency prompting technique**. We ask the same question three times but formulating it with different words and opening each time a new chat: 
+Since the information is not clear enough, we carry out a research on the committent of this statue. On the webpage of the <a href= "http://www.polomuseale.firenze.it/areastampa/files/53185184f1c3bc7c07000000/02%20SALA%20MICHE_PDF.pdf">Museo Nazionale del Bargello</a>, we discover that the committent was Baccio Valori. 
+
+-_Step 2_
+
+We now decide to ask ChaptGPT and Gemini to retrieve further information on the committent by using the **self-consistency prompting technique**. We ask the same question three times but formulating it with different words and opening each time a new chat: 
 
 _Q: Who commissioned the artwork Tondo Doni authored by Michelangelo?
 A: The artwork Tondo Doni was commissioned by a rich merchant named Agnolo Doni.
@@ -266,10 +270,51 @@ Gemini - Answer 2
 Gemini - Answer 3 
 ![CC](https://github.com/capa46/project/assets/170109035/93ac665b-f562-4711-87c6-506484e2431c)
 
+We observe that Gemini replies correctly to the two last questions phrased in a more specific way but with different words, which demonstrates its self-consistency. On the other hand, ChatGPT is not coherent because it provides the wrong answer to the third question. Overall, we can hilighlight the fact that both LLMs outputs are not always coherent. 
+
+-_Step 3_
+
+We are now interested in finding out in which events the cultural property _David-Apollo_ was involved. To do so, we used the following query.
+
+QUERY 5 
+
+PREFIX l0: <https://w3id.org/italia/onto/l0/>
+
+PREFIX cis: <http://dati.beniculturali.it/cis/>
+
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
+PREFIX agent: <https://w3id.org/arco/resource/Agent/>
 
 
+SELECT DISTINCT ?event ?eventName ?culturalProperty 
+
+WHERE{
+
+  ?event cis:involvesCulturalEntity ?culturalProperty ;
+  
+  l0:name ?eventName .
+  
+  ?culturalProperty a-cd:hasAuthor agent:56d8ee32618291c12ae4f357db49c221 ;
+  
+                              a arco:HistoricOrArtisticProperty ;
+                              
+                             rdfs:label ?l .
+                             
+FILTER(REGEX(?l, "david-apollo", "i"))
+
+}
+
+ORDER BY DESC(?eventName)
 
 
+![PP](https://github.com/capa46/project/assets/170109035/26630734-7c55-40a0-a67b-ec8b25da35b4)
+
+As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of events are spelled differently leading the knowledge graph to assume that they are different entities.
 
 
   
@@ -278,55 +323,7 @@ Gemini - Answer 3
 
 
 
-### And an ordered list:
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
 
 <a name="m-anchor"></a>
 4.  Conclusions and possible future developments
