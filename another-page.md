@@ -199,7 +199,7 @@ This triple links the Michelangelo and Halm Peter Von's artwork to its location 
 <a name="c-anchor"></a>
 <h4 style="background-color:yellow ;">2. Cultural Property "David-Apollo", Michelangelo Buonarroti (sec. XVI)</h4>
 
-<img src="https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be" width="100" height="400">
+<img src="https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be" width="200" height="400">
 
 - _Step 1_
 
