@@ -4,8 +4,10 @@
 1. [Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)](#custom-anchor)
    
 2. [Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)](#c-anchor)
+   
+3. [Discussion](#cc-anchor) 
 
-3. [Conclusions and possible future developments](#m-anchor)
+4. [Conclusions and possible future developments](#m-anchor)
 
 
 
@@ -376,7 +378,7 @@ FILTER(REGEX(?slabel,"david", "i"))
 
 ORDER BY ASC (?sub)
 
-Result:<a href= "https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427">IRI of David</a>
+Result: <a href= "https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427">IRI of David</a>
 
 
 
@@ -476,11 +478,23 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 <div style="margin-top: 50px;"></div> 
 
 
+<a name="cc-anchor"></a>
+3. Discussion
 
+- The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, author
+  
+- LLMs are useful but they must be used carefully and they must be precisely instructed
+  
+
+<div style="margin-top: 50px;"></div> 
 
 
 <a name="m-anchor"></a>
-3.  Conclusions and possible future developments
+4.  Conclusions and possible future developments
+
+- Futher enrichment of the ArCo ontology: continuos update and easy access for laymen
+  
+- Future development of LLMs 
 
 
 
