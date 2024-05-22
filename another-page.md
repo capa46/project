@@ -5,7 +5,8 @@
    
 2. [Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)](#c-anchor)
 
-3. 
+3. [Conclusions and possible future developments](#m-anchor)
+
 
 
 <div style="margin-top: 50px;"></div> 
@@ -418,9 +419,55 @@ https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607  a-cd:hasSu
 https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600
 
 - _Step 6_
-- 
 
-  
+ Are there other artworks with the same problem as above? To find it out, we use the keyword **OPTIONAL** 
+ that enables to retrieve cultural properties with the subject _David_ and eventually _Apollo_ as well. 
+
+ QUERY 8
+
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
+SELECT DISTINCT ?sub ?label
+
+WHERE
+
+{
+
+?cp a-cd:hasSubject ?sub .
+
+?sub a a-cd:Subject ;
+
+rdfs:label ?label .
+
+FILTER(REGEX(?label,”david”, “i”))
+
+OPTIONAL { ?culturalProperty a-cd:subject “apollo”, “i”} 
+
+}
+
+LIMIT 100
+
+
+The answer is yes: we find the artwork _Apollo o David Con La Viola da Braccio_ (<a href= "https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45">IRI</a>) that has the same problem. Thus, we create other triples to disambiguate and make explicit the existance of the two figures as subjects. 
+
+Triples: 
+
+https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45 a-cd:hasSubject 
+
+https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427
+
+
+https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45 a-cd:hasSubject 
+
+https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600
+
+
+
+
+
+
 
 
 
@@ -429,7 +476,7 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 
 
 <a name="m-anchor"></a>
-4.  Conclusions and possible future developments
+3.  Conclusions and possible future developments
 
 
 
