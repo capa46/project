@@ -2,11 +2,27 @@
 
 1.  [Methodology](#custom-anchor)
 2.  [Results and analysis](#c-anchor)
-3.  [Discussion](another-page.md)
+
 4.  [Conclusions and possible future developments](#m-anchor)
+
+**INDEX**
+
+1. [Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)](#custom-anchor)
+2. [Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)](#c-anchor)  
+
+
+
+
+
+
+
 
 
 <a name="custom-anchor"></a>
+Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)
+
+
+
 ## **1. METHODOLOGY**
 
 _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology and Knowledge Graph
@@ -163,6 +179,15 @@ _HistoricOrArtisticProperty:0100214952 a-loc:hasCulturalInstituteOrSite Cultural
 This triple links the Michelangelo and Halm Peter Von's artwork to its location, that is, the Instituto di Belle Arti of Vercelli, thanks to the property _a-loc:hasCulturalInstituteOrSite_.
 
 
+
+
+
+
+
+
+
+<a name="c-anchor"></a>
+Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)
 **David-Apollo (statua) di Buonarroti Michelangelo (sec. XVI)**
 
 - _Step 1_
