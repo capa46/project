@@ -24,7 +24,7 @@ _External resources_: Google
 <a name="custom-anchor"></a>
 <h4 style="background-color:yellow ;">1. Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Ham Peter Von (sec. XIX)</h4>
 
-<img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" alt="Pietà (stampa)" width="200" height="250">
+<img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250">
 
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
 
@@ -99,7 +99,7 @@ Results:
 We use the LLMs Gemini and ChatGPT in order to enrich the information regarding the location of the artwork _Pietà (stampa)_:
 
 -ChatGPT  
-  ![Screenshot 2024-05-18 162547](https://github.com/capa46/project/assets/170355893/2dd708ce-1138-491c-bb66-7a9f1992b720)
+  <img src="https://github.com/capa46/project/assets/170355893/2dd708ce-1138-491c-bb66-7a9f1992b720" width="800" height="400">
 
 -Gemini
   ![piet](https://github.com/capa46/project/assets/170355893/6a7d744e-c658-45ff-ae39-43b6a1974af2)
