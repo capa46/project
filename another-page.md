@@ -226,9 +226,46 @@ Among the results, we choose the _David-Apollo_ statue with <a href= "https://w3
 After analysing the data, we focus our attention on the property _a-cd:hasCommission_ that refers to _Committenza 1 del bene 0900286607_ with <a href= "https://w3id.org/arco/resource/Commission/0900286607-1">this IRI</a>.
 
 
+We now decid to ask ChaptGPT and Gemini to retrieve further information on the committent by using the **self-consistency prompting technique**. We ask the same question three times but formulating it with different words and opening each time a new chat: 
+
+_Q: Who commissioned the artwork Tondo Doni authored by Michelangelo?
+A: The artwork Tondo Doni was commissioned by a rich merchant named Agnolo Doni.
+
+Q1: Why was the statue David-Apollo by Michelangelo sculptured?_
+
+ChatGPT answer 1
+![ChatGPT 1](https://github.com/capa46/project/assets/170109035/93b1246f-3268-48e1-a8b3-84089d36b0cc)
+
+Gemini answer 1
+![AA](https://github.com/capa46/project/assets/170109035/c149da8f-082d-4773-8e81-419711a6e053)
+
+ The answer provided by Gemini is wrong and murky. On the other hand, the one given by ChaptGPT is correct.
+Thus, we decide to phrase the following questions (2,3) in a more explicit way, but using different words and chats. 
+
+_ Q: Who commissioned the artwork Tondo Doni authored by Michelangelo?
+A: The artwork Tondo Doni was commissioned by a rich merchant named Agnolo Doni.
+
+Q2: Who commissioned the statue David-Apollo authored by Michelangelo?
+
+Q3: Which organization or person hired Michelangelo to sculpt the statue of David-Apollo? Be detailed._
 
 
- 
+ChatGPT - Answer 2 
+![ChatGPT 2](https://github.com/capa46/project/assets/170109035/0ebb7e19-167e-454a-9a58-fb56ec2539dd)
+
+
+ChatGPT - Answer 3
+![ChatGPT 3](https://github.com/capa46/project/assets/170109035/c3229abe-57f9-4387-964b-1916ea110e57)
+
+
+
+Gemini - Answer 2
+![BB](https://github.com/capa46/project/assets/170109035/f5dc08d6-b0ee-49ce-9d17-acc689b4b4ac)
+
+
+Gemini - Answer 3 
+![CC](https://github.com/capa46/project/assets/170109035/93ac665b-f562-4711-87c6-506484e2431c)
+
 
 
 
