@@ -6,9 +6,7 @@
 2. [Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)](#c-anchor)  
 
 
-
-
-<div style="margin-top: 150px;"></div> 
+<div style="margin-top: 50px;"></div> 
 
 
 ## **1. METHODOLOGY**
