@@ -11,21 +11,16 @@
 <div style="margin-top: 150px;"></div> 
 
 
-
-
-<a name="custom-anchor"></a>
-
-**Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)**
-
-
-
 ## **1. METHODOLOGY**
 
 _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology and Knowledge Graph
 
 _External resources_: Google
 
-<h4 style="background-color:yellow ;">Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)</h4>
+
+<a name="custom-anchor"></a>
+<h4 style="background-color:yellow ;">Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)</h4>
+
 
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
 
