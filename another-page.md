@@ -89,6 +89,7 @@ FILTER(REGEX(?l, "pietà", "i"))
 
 We employ the keyword **DISTINCT** to eliminate duplicates and by doing so we get 7 results. Among them, we selct the artwork _Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)_, from which we retrieve the cultural property IRI and the 2nd author's (Halm Peter Von) IRI.
 
+
 Results:
 
 <a href= "https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100214952">IRI Pietà (stampa)</a>
@@ -97,6 +98,7 @@ Results:
 
 
 - _Step 3_
+
 
 **Prompting techniques:**
 We use the LLMs Gemini and ChatGPT in order to enrich the information regarding the location of the artwork _Pietà (stampa)_:
@@ -120,7 +122,7 @@ ChatGPT provides us with a wrong answer, while Gemini answers correctly: _The re
 **Prompting techniques:**
 We want to transform the new-found information into RDF format to build a triple and to do so we apply the **chain of thought prompting technique**, both in Gemini and ChatGPT.
 
-- Chain of thought prompt:
+Chain of thought prompt:
 
 _The Doni Tondo or Doni Madonna is kept in the Uffizi in Florence, Italy._
 
@@ -133,6 +135,7 @@ _IRI Galleria degli Uffizi = https://w3id.org/arco/resource/CulturalInstituteOrS
 _HistoricOrArtisticProperty:0900287181 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite:68ea75fb6946df92f9c6a6fa98a5d1f3_
 
 _Based on the previous example that I gave you, could you transform the following sentence “The record specifies that the print "Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX) is kept at the Istituto di Belle Arti (Institute of Fine Arts) located on Via Duomo, 17, Vercelli (VC), Italy” into RDF format using the ArCo ontology?_
+
 
 **Results and analysis:**
 
@@ -186,13 +189,13 @@ Consequently, it can be said that there is no IRI for the Istituto di Belle Arti
 
 _HistoricOrArtisticProperty:0100214952 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite:XXX_
 
-This triple links the Michelangelo and Halm Peter Von's artwork to its location - that is, the Instituto di Belle Arti of Vercelli, thanks to the property _a-loc:hasCulturalInstituteOrSite_.
+This triple would link Michelangelo and Halm Peter Von's artwork to its location - that is, the Instituto di Belle Arti of Vercelli, thanks to the property _a-loc:hasCulturalInstituteOrSite_.
 
 
 
 
 
-<div style="margin-top: 50px;"></div> 
+<div style="margin-top: 80px;"></div> 
 
 
 
@@ -256,7 +259,7 @@ ChatGPT answer 1
 Gemini answer 1
 <img src="https://github.com/capa46/project/assets/170109035/c149da8f-082d-4773-8e81-419711a6e053" width="800" height="400"> 
 
- The answer provided by Gemini is wrong and murky. On the other hand, the one given by ChaptGPT is correct.
+The answer provided by Gemini is wrong and murky. On the other hand, the one given by ChaptGPT is correct.
 Thus, we decide to phrase the following questions (2,3) in a more explicit way, but using different words and chats. 
 
 _Q: Who commissioned the artwork Tondo Doni authored by Michelangelo?
@@ -326,7 +329,7 @@ FILTER(REGEX(?l, "david-apollo", "i"))
 ORDER BY DESC(?eventName)
 
 
-<img src="https://github.com/capa46/project/assets/170109035/26630734-7c55-40a0-a67b-ec8b25da35b4" width="1000" height="400">
+<img src="https://github.com/capa46/project/assets/170109035/26630734-7c55-40a0-a67b-ec8b25da35b4" width="900" height="500">
 
 As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of events are spelled differently leading the knowledge graph to assume that they are different entities.
 
@@ -433,13 +436,14 @@ https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607  a-cd:hasSu
 
 https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600
 
+
 - _Step 6_
 
  Are there other artworks with the same problem as above? To find it out, we use the keyword **OPTIONAL** 
  that enables to retrieve cultural properties with the subject _David_ and eventually _Apollo_ as well. 
 
 
- QUERY 8
+QUERY 8
 
 PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
 
@@ -505,7 +509,7 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 <h4 style="background-color:yellow ;">4. Conclusions and possible future developments</h4>
 
 
-- Futher enrichment of the ArCo ontology: continuos update and easy access for laymen
+- Futher enrichment of the ArCo ontology: constant update and easy access for laymen
   
 - Future development of LLMs 
 
