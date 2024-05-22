@@ -329,7 +329,8 @@ FILTER(REGEX(?l, "david-apollo", "i"))
 ORDER BY DESC(?eventName)
 
 
-<img src="https://github.com/capa46/project/assets/170109035/26630734-7c55-40a0-a67b-ec8b25da35b4" width="900" height="500">
+
+![10](https://github.com/capa46/project/assets/170109035/df5f50a6-528b-4635-aff7-ec45e2fb6e18)
 
 As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of events are spelled differently leading the knowledge graph to assume that they are different entities.
 
