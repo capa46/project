@@ -7,7 +7,7 @@ layout: default
 
 ArCo: the knowledge Graph of the Italian Cultural Heritage
 
-Large Language Models : Gemini and ChaptGPT
+Large Language Models: Gemini and ChaptGPT
 
 <h3 style="color: blue;">-Team</h3>
 
@@ -15,7 +15,7 @@ Sara Speggiorin & Sara Paglia
 
 <h3 style="color: blue;">-Topic</h3> 
 
-Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-Apollo_ 
+Michelangelo's artworks: an in-depth analysis of _Pietà (stampa)_ and _David-Apollo_ 
 
 <h3 style="color: blue;">-Purpose</h3>
 
@@ -33,8 +33,8 @@ Michelangelo's artworks : an in-depth analysis of _Pietà (stampa)_ and _David-A
 
 
 [OUR PROJECT](another-page.md)
-1. Cultural Property "Pietà(stampa)", Michelangelo Buonarroti & Halm Peter Von (sec.XIX)
-2. Cultural Property "David-Apollo", Michelangelo Buonarroti (sec.XVI)
+1. Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Halm Peter Von (sec.XIX)
+2. Cultural Property _David-Apollo_, Michelangelo Buonarroti (sec.XVI)
 
 
 
