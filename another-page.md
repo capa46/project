@@ -3,7 +3,9 @@
 
 1. [Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)](#custom-anchor)
    
-2. [Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)](#c-anchor)  
+2. [Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)](#c-anchor)
+
+3. 
 
 
 <div style="margin-top: 50px;"></div> 
@@ -316,6 +318,107 @@ ORDER BY DESC(?eventName)
 
 As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of events are spelled differently leading the knowledge graph to assume that they are different entities.
 
+In order to enrich and improve the structure of the knowledge graph, we had considered using the property _owl:sameAs_ to connect the events reporting the same name. However, even though the names of the events are spelled differently, their IRIs are actually the same. Therefore, the property _owl:sameAs_ cannot be applied and consequently the most optimal solution is to correct the discrepancies in the event names, so as to eliminate duplicates.
+
+- _Step 4_
+
+We want to know how the event _L'ombra del genio. MIchelangelo e l'arte a Firenze 1537-1631_ was reviewed. We apply the **few-shot technique** to the LLMs ChatGPT and Gemini as to find out whether it was successful or not : 
+
+
+_ Based on the following examples, tell me if the review about the event "L'ombra del genio. Michelangelo e l'arte a Firenze 1537-1631" reported in the last paragraph is positive or negative. Q: The last novel by J.K. Rowling was really interesting because all the characters were complex and well-developed. // Positive
+
+The movie Allegiant was delusional because the plot was completely different from what was in the book. // Negative
+
+This major international exhibition provides a detailed survey of the art of Florence during the years that Michelangelo and artists employed by the first Medici grand dukes—such as Cellini, Bronzino, and Pontormo—produced celebrated masterpieces. Works by these artists bolstered the wordly power and status of the ruling family and reflected the sophistication and refinement of Florentine court circles, in which high value was placed upon classical aesthetics and scientific learning. Many of the 200 objects in the exhibition—including sculpture, painting, armor, medals, porcelain, and tapestries—have never before traveled out of Florence. Among the objects on view for the first time in the United States are three sculptures by Michelangelo, some of the greatest paintings of the Uffizi and Pitti Galleries, and works from the famed Studiolo (treasure room) of Francesco I in the Palazzo Vecchio.
+The Medici, Michelangelo, and the Art of Late Renaissance Florence is the first major exhibition in North America devoted to this moment of great achievement and artistic innovation, one of the richest periods in the history of art. Before coming to the Art Institute, the exhibition opened at the Strozzi Palace in Florence. After leaving Chicago it will be seen at the Detroit Institute of Arts.//
+
+A: _
+
+ChatGPT 
+
+![ChatGPT review](https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f)
+
+Gemini
+
+![99](https://github.com/capa46/project/assets/170109035/7b378822-50fb-45c0-b23c-ad00307249f5)
+
+Both LLMs reply correctly to our prompting and understant that the event was successful. 
+
+- _Step 5_
+
+We now focus on the subject of the statue.
+The description of the artwork explains that the subject is inspired by both the biblical character David and the Greek god Apollo.  
+At the property _a-cd:hasSubject_, we notice that the two figures are indicated as a single entity. However, we want to enrich the data by specifying that the two figures could also be two separate subjects. In this way, the statue can be one of the outputs of a query; otherwise, it would be discarded because the two figures are not labelled individually.
+We therefore use the following query to find the IRI of the entity David (then doing the same for Apollo). Assuming that we will get many results, we use the keyword **ORDER BY ASC** to go through the different results more easily.
+
+QUERY 6 
+
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
+SELECT DISTINCT ?sub ?slabel
+
+WHERE
+
+{
+
+?cp a-cd:hasSubject ?sub .
+
+?sub a a-cd:Subject ;
+
+rdfs:label ?slabel .
+
+FILTER(REGEX(?slabel,"david", "i"))
+
+}
+
+ORDER BY ASC (?sub)
+
+Result:<a href= "https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427>IRI of David</a>
+
+QUERY 7
+
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+
+SELECT DISTINCT ?sub ?slabel
+
+
+WHERE
+
+{
+
+?cp a-cd:hasSubject ?sub .
+
+?sub a a-cd:Subject ;
+
+rdfs:label ?slabel .
+
+FILTER(REGEX(?slabel,"apollo", "i"))
+
+}
+
+ORDER BY ASC (?sub)
+
+Result: <a href= "https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600>IRI of Apollo</a>
+
+Now that we have the two single IRIs, we are able to create triples that allow us to link the statue _David-Apollo_ to the two single subjects: 
+
+Triples 
+
+https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607  a-cd:hasSubject 
+
+https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427
+
+
+https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607  a-cd:hasSubject 
+
+https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600
+
+- _Step 6_
+- 
 
   
 
