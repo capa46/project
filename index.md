@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h2 style="color: green;">INTRODUCTION</h2>
+<h3 style="color: green;">INTRODUCTION</h3>
 
 <h2 style="color: blue;">-Context</h2>
 
