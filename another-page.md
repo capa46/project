@@ -17,11 +17,13 @@ _External resources_: Google
 
 
 <a name="custom-anchor"></a>
-<h4 style="background-color:yellow ;">Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)</h4>
+<h4 style="background-color:yellow ;">Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Ham Peter Von (sec. XIX)</h4>
 
 ![Pietà](https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710)
 
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
+
+QUERY 1
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -52,6 +54,8 @@ Result:
 
 - _Step 2_: We are curious to know more about Michelangelo's artwork _Pietà_. We therefore explore ArCo by using the following query:
 
+QUERY 2 
+
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 PREFIX arco: <https://w3id.org/arco/ontology/arco/>
@@ -75,15 +79,18 @@ FILTER(REGEX(?l, "pietà", "i"))
 
 }
 
-We employ the keyword DISTINCT to eliminate duplicates and by doing so we get 7 results. Among them, we selct the artwork _Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)_, from which we retrieve the cultural property's IRI and the 2nd author's (Halm Peter Von) IRI.
-Result:
+We employ the keyword **DISTINCT** to eliminate duplicates and by doing so we get 7 results. Among them, we selct the artwork _Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)_, from which we retrieve the cultural property IRI and the 2nd author's (Halm Peter Von) IRI.
+
+Results:
+
 <a href= "https://w3id.org/arco/resource/HistoricOrArtisticProperty/0100214952">IRI Pietà (stampa)</a>
+
 <a href= "https://w3id.org/arco/resource/Agent/8603b17b6451202a8d27734812dae423">IRI Halm Peter Von</a>
 
 
 - _Step 3_
 
-**-Prompting techniques:**
+**Prompting techniques:**
 We use the LLMs Gemini and ChatGPT in order to enrich the information regarding the location of the artwork _Pietà (stampa)_:
 
 -ChatGPT  
@@ -92,20 +99,21 @@ We use the LLMs Gemini and ChatGPT in order to enrich the information regarding 
 -Gemini
   ![piet](https://github.com/capa46/project/assets/170355893/6a7d744e-c658-45ff-ae39-43b6a1974af2)
 
-We use the zero-shot prompting technique starting from the question _Could you please tell me the exact place in which the stamp 'Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)' is kept?_.
+We use the **zero-shot prompting technique** starting from the question _Could you please tell me the exact place in which the stamp 'Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)' is kept?_.
 
 
 
-**-Results and analysis:**
-ChatGPT provides us with a wrong answer, while Gemini answers correctly:_The record specifies that the print "Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)" is kept at the Istituto di Belle Arti (Institute of Fine Arts) located on Via Duomo, 17, Vercelli (VC), Italy [source:catalogo.beniculturali.it]_.
+**Results and analysis:**
+ChatGPT provides us with a wrong answer, while Gemini answers correctly: _The record specifies that the print "Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)" is kept at the Istituto di Belle Arti (Institute of Fine Arts) located on Via Duomo, 17, Vercelli (VC), Italy [source:catalogo.beniculturali.it]_.
 
 
 - _Step 4_
 
 **Prompting techniques:**
-We want to transform the new-found information into RDF format to build a triple and to do so we apply the Chain of Thought prompting technique, both in Gemini and ChatGPT.
+We want to transform the new-found information into RDF format to build a triple and to do so we apply the **chain of thought prompting technique**, both in Gemini and ChatGPT.
 
--Chain of Thought prompt:
+- Chain of thought prompt:
+
 The Doni Tondo or Doni Madonna is kept in the Uffizi in Florence, Italy.
 
 RDF format: IRI Doni Tondo = https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900287181 
@@ -118,8 +126,9 @@ HistoricOrArtisticProperty:0900287181 a-loc:hasCulturalInstituteOrSite CulturalI
 
 _Based on the previous example that I gave you, could you transform the following sentence “The record specifies that the print "Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX) is kept at the Istituto di Belle Arti (Institute of Fine Arts) located on Via Duomo, 17, Vercelli (VC), Italy” into RDF format using the ArCo ontology?_
 
-**-Results and analysis:**
-Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same prompt and it provides a correct answer as it is able to create a triple, even though it uses wrong IRIs, that is Halm Peter Von's IRI and the Istituto di Belle Arti's IRI.
+**Results and analysis:**
+
+Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same prompt and it provides a correct answer as it is able to create a triple, even though it uses wrong IRIs, that is Halm Peter Von's IRI and the IRI of the Istituto di Belle Arti.
 ![Screenshot 2024-05-18 170720](https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c)
 ![Screenshot 2024-05-18 170804](https://github.com/capa46/project/assets/170355893/e26bba28-7f13-4353-a74d-fbd37e3c218c)
 
@@ -127,7 +136,9 @@ Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same pr
 - _Step 5_
 
 Since the triple's structure proposed by ChatGPT is correct, we want to use it and therefore need to substitute the wrong IRIs with the correct ones. That is why we opt for retrieving the IRI of the Istituto di Belle Arti of Vercelli in the ArCo ontology, assuming that it exists.
-We focus our query on the cultural properties located in Vercelli and authored by both Michelangelo and Halm Peter Von by using the keyword UNION:
+We focus our query on the cultural properties located in Vercelli and authored by both Michelangelo and Halm Peter Von by using the keyword **UNION**:
+
+QUERY 3
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 
@@ -156,34 +167,34 @@ UNION {?culturalProperty a-cd:hasAuthor agent:8603b17b6451202a8d27734812dae423}
 
 }
 
-We get a single result, which corresponds to _a cis:GeographicalFeature_ and returns the Iri of Vercelli
+We get a single result, which corresponds to _a cis:GeographicalFeature_ and returns the <a href= "https://w3id.org/arco/resource/GeographicalFeature/39d1317c461740217063d916af2248bb">IRI of Vercelli</a> .
 
-<a href= "https://w3id.org/arco/resource/GeographicalFeature/39d1317c461740217063d916af2248bb">IRI of Vercelli</a>
+**Results and analysis:**
 
-##**-Results and analysis:**
-
-Consequently, it can be said that there is no IRI for the Istituto di Belle Arti of Vercelli. For this reason, we would suggest to create a new IRI for this institute in order to have the possibility to use it for the following triple and enhance the knowledge graph:
+Consequently, it can be said that there is no IRI for the Istituto di Belle Arti of Vercelli. For this reason, we would suggest to create a new IRI for this Institute in order to have the possibility to use it for the following triple and enhance the knowledge graph:
 
 _HistoricOrArtisticProperty:0100214952 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite:XXX_
 
-This triple links the Michelangelo and Halm Peter Von's artwork to its location, that is, the Instituto di Belle Arti of Vercelli, thanks to the property _a-loc:hasCulturalInstituteOrSite_.
+This triple links the Michelangelo and Halm Peter Von's artwork to its location - that is, the Instituto di Belle Arti of Vercelli, thanks to the property _a-loc:hasCulturalInstituteOrSite_.
 
 
 
 
 
-
+<div style="margin-top: 50px;"></div> 
 
 
 
 <a name="c-anchor"></a>
-<h4 style="background-color:yellow ;">Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)</h4>
+<h4 style="background-color:yellow ;">Cultural Property "David-Apollo", Michelangelo Buonarroti (sec. XVI)</h4>
 
 ![David-Apollo](https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be)
 
 - _Step 1_
 
 We now want to find the artwork _David_ authored by Michelangelo Buonarroti using the following query:
+
+QUERY 4
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -214,7 +225,7 @@ Among the results, we choose the _David-Apollo_ statue with <a href= "https://w3
 
 After analysing the data, we focus our attention on the property _a-cd:hasCommission_ that refers to _Committenza 1 del bene 0900286607_ with <a href= "https://w3id.org/arco/resource/Commission/0900286607-1">this IRI</a>.
 
-<a href= "https://capa46.github.io/project/another-page.html">Methodology</a>
+
 
 
  
