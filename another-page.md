@@ -12,7 +12,7 @@
 
 <div style="margin-top: 100px;"></div> 
 
-### **METHODOLOGY**
+**METHODOLOGY**
 
 
 _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology and Knowledge Graph
@@ -23,7 +23,7 @@ _External resources_: Google
 <a name="custom-anchor"></a>
 <h4 style="background-color:yellow ;">1. Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Ham Peter Von (sec. XIX)</h4>
 
-<img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250">
+<img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="100" height="400">
 
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
 
@@ -137,8 +137,9 @@ _Based on the previous example that I gave you, could you transform the followin
 **Results and analysis:**
 
 Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same prompt and it provides a correct answer as it is able to create a triple, even though it uses wrong IRIs, that is Halm Peter Von's IRI and the IRI of the Istituto di Belle Arti.
-<img src="https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c" width="800" height="500">
-<img src="https://github.com/capa46/project/assets/170355893/e26bba28-7f13-4353-a74d-fbd37e3c218c" width="900" height="300"> 
+<img src="https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c" width="1000" height="500">
+<img src="https://github.com/capa46/project/assets/170109035/c124519e-49f4-43ef-b9a2-98db623f31cc" width="900" height="200"> 
+
 
 
 - _Step 5_
