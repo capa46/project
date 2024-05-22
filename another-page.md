@@ -19,6 +19,7 @@ _External resources_: Google
 <a name="custom-anchor"></a>
 <h4 style="background-color:yellow ;">Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)</h4>
 
+![Pietà](https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710)
 
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
 
@@ -178,6 +179,7 @@ This triple links the Michelangelo and Halm Peter Von's artwork to its location,
 <a name="c-anchor"></a>
 <h4 style="background-color:yellow ;">Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)</h4>
 
+![David-Apollo](https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be)
 
 - _Step 1_
 
