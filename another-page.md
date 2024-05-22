@@ -300,10 +300,10 @@ WHERE{
   l0:name ?eventName .
   
   ?culturalProperty a-cd:hasAuthor agent:56d8ee32618291c12ae4f357db49c221 ;
+ 
+                    a arco:HistoricOrArtisticProperty ;
   
-                              a arco:HistoricOrArtisticProperty ;
-                              
-                             rdfs:label ?l .
+                    rdfs:label ?l .
                              
 FILTER(REGEX(?l, "david-apollo", "i"))
 
