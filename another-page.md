@@ -12,7 +12,7 @@
 <div style="margin-top: 50px;"></div> 
 
 
-## **1. METHODOLOGY**
+**METHODOLOGY**
 
 _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology and Knowledge Graph
 
@@ -20,7 +20,7 @@ _External resources_: Google
 
 
 <a name="custom-anchor"></a>
-<h4 style="background-color:yellow ;">Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Ham Peter Von (sec. XIX)</h4>
+<h4 style="background-color:yellow ;">1. Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Ham Peter Von (sec. XIX)</h4>
 
 ![Pietà](https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710)
 
@@ -189,7 +189,7 @@ This triple links the Michelangelo and Halm Peter Von's artwork to its location 
 
 
 <a name="c-anchor"></a>
-<h4 style="background-color:yellow ;">Cultural Property "David-Apollo", Michelangelo Buonarroti (sec. XVI)</h4>
+<h4 style="background-color:yellow ;">2. Cultural Property "David-Apollo", Michelangelo Buonarroti (sec. XVI)</h4>
 
 ![David-Apollo](https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be)
 
@@ -378,6 +378,8 @@ ORDER BY ASC (?sub)
 
 Result:<a href= "https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427">IRI of David</a>
 
+
+
 QUERY 7
 
 PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
@@ -405,9 +407,10 @@ ORDER BY ASC (?sub)
 
 Result: <a href= "https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600">IRI of Apollo</a>
 
+
 Now that we have the two single IRIs, we are able to create triples that allow us to link the statue _David-Apollo_ to the two single subjects: 
 
-Triples 
+Triples: 
 
 https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607  a-cd:hasSubject 
 
@@ -450,6 +453,7 @@ OPTIONAL { ?culturalProperty a-cd:subject “apollo”, “i”}
 LIMIT 100
 
 
+
 The answer is yes: we find the artwork _Apollo o David Con La Viola da Braccio_ (<a href= "https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45">IRI</a>) that has the same problem. Thus, we create other triples to disambiguate and make explicit the existance of the two figures as subjects. 
 
 Triples: 
@@ -469,7 +473,7 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 
 
 
-
+<div style="margin-top: 50px;"></div> 
 
 
 
