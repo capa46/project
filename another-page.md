@@ -10,10 +10,10 @@
 
 
 
-<div style="margin-top: 50px;"></div> 
+<div style="margin-top: 100px;"></div> 
 
+### **METHODOLOGY** (H3)
 
-**METHODOLOGY**
 
 _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology and Knowledge Graph
 
@@ -26,6 +26,7 @@ _External resources_: Google
 <img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250">
 
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
+
 
 QUERY 1
 
@@ -52,11 +53,13 @@ FILTER(REGEX(?l, "tondo doni", "i"))
 
 LIMIT 20
 
+
 Result:
 <a href= "https://w3id.org/arco/resource/Agent/56d8ee32618291c12ae4f357db49c221">IRI Michelangelo</a>
 
 
 - _Step 2_: We are curious to know more about Michelangelo's artwork _Pietà_. We therefore explore ArCo by using the following query:
+
 
 QUERY 2 
 
@@ -82,6 +85,7 @@ rdfs:label ?l .
 FILTER(REGEX(?l, "pietà", "i"))
 
 }
+
 
 We employ the keyword **DISTINCT** to eliminate duplicates and by doing so we get 7 results. Among them, we selct the artwork _Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)_, from which we retrieve the cultural property IRI and the 2nd author's (Halm Peter Von) IRI.
 
@@ -133,14 +137,15 @@ _Based on the previous example that I gave you, could you transform the followin
 **Results and analysis:**
 
 Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same prompt and it provides a correct answer as it is able to create a triple, even though it uses wrong IRIs, that is Halm Peter Von's IRI and the IRI of the Istituto di Belle Arti.
-<img src="https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c" width="800" height="400">
-<img src="https://github.com/capa46/project/assets/170355893/e26bba28-7f13-4353-a74d-fbd37e3c218c" width="800" height="400"> 
+<img src="https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c" width="800" height="500">
+<img src="https://github.com/capa46/project/assets/170355893/e26bba28-7f13-4353-a74d-fbd37e3c218c" width="900" height="300"> 
 
 
 - _Step 5_
 
 Since the triple's structure proposed by ChatGPT is correct, we want to use it and therefore need to substitute the wrong IRIs with the correct ones. That is why we opt for retrieving the IRI of the Istituto di Belle Arti of Vercelli in the ArCo ontology, assuming that it exists.
 We focus our query on the cultural properties located in Vercelli and authored by both Michelangelo and Halm Peter Von by using the keyword **UNION**:
+
 
 QUERY 3
 
@@ -173,6 +178,7 @@ UNION {?culturalProperty a-cd:hasAuthor agent:8603b17b6451202a8d27734812dae423}
 
 We get a single result, which corresponds to _a cis:GeographicalFeature_ and returns the <a href= "https://w3id.org/arco/resource/GeographicalFeature/39d1317c461740217063d916af2248bb">IRI of Vercelli</a> .
 
+
 **Results and analysis:**
 
 Consequently, it can be said that there is no IRI for the Istituto di Belle Arti of Vercelli. For this reason, we would suggest to create a new IRI for this Institute in order to have the possibility to use it for the following triple and enhance the knowledge graph:
@@ -192,11 +198,12 @@ This triple links the Michelangelo and Halm Peter Von's artwork to its location 
 <a name="c-anchor"></a>
 <h4 style="background-color:yellow ;">2. Cultural Property "David-Apollo", Michelangelo Buonarroti (sec. XVI)</h4>
 
-<img src="https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be" width="200" height="250">
+<img src="https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be" width="400" height="300">
 
 - _Step 1_
 
 We now want to find the artwork _David_ authored by Michelangelo Buonarroti using the following query:
+
 
 QUERY 4
 
@@ -224,6 +231,7 @@ FILTER(REGEX(?l, "david", "i"))
 }
 
 LIMIT 10
+
 
 Among the results, we choose the _David-Apollo_ statue with <a href= "https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607">this IRI</a>.
 
@@ -280,6 +288,7 @@ We observe that Gemini replies correctly to the two last questions phrased in a 
 
 We are now interested in finding out in which events the cultural property _David-Apollo_ was involved. To do so, we used the following query.
 
+
 QUERY 5 
 
 PREFIX l0: <https://w3id.org/italia/onto/l0/>
@@ -316,7 +325,7 @@ FILTER(REGEX(?l, "david-apollo", "i"))
 ORDER BY DESC(?eventName)
 
 
-<img src="https://github.com/capa46/project/assets/170109035/26630734-7c55-40a0-a67b-ec8b25da35b4" width="800" height="400">
+<img src="https://github.com/capa46/project/assets/170109035/26630734-7c55-40a0-a67b-ec8b25da35b4" width="1000" height="400">
 
 As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of events are spelled differently leading the knowledge graph to assume that they are different entities.
 
@@ -338,11 +347,11 @@ _A:_
 
 ChatGPT 
 
-<img src="https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f" width="800" height="400">
+<img src="https://github.com/capa46/project/assets/170109035/17c8c9b8-c23b-4075-b8fa-9362baa98c1f" width="900" height="400">
 
 Gemini
 
-<img src="https://github.com/capa46/project/assets/170109035/7b378822-50fb-45c0-b23c-ad00307249f5" width="800" height="400">
+<img src="https://github.com/capa46/project/assets/170109035/7b378822-50fb-45c0-b23c-ad00307249f5" width="900" height="500">
 
 Both LLMs reply correctly to our prompting and understant that the event was successful. 
 
@@ -352,6 +361,7 @@ We now focus on the subject of the statue.
 The description of the artwork explains that the subject is inspired by both the biblical character David and the Greek god Apollo.  
 At the property _a-cd:hasSubject_, we notice that the two figures are indicated as a single entity. However, we want to enrich the data by specifying that the two figures could also be two separate subjects. In this way, the statue can be one of the outputs of a query; otherwise, it would be discarded because the two figures are not labelled individually.
 We therefore use the following query to find the IRI of the entity David (then doing the same for Apollo). Assuming that we will get many results, we use the keyword **ORDER BY ASC** to go through the different results more easily.
+
 
 QUERY 6 
 
@@ -427,6 +437,7 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
  Are there other artworks with the same problem as above? To find it out, we use the keyword **OPTIONAL** 
  that enables to retrieve cultural properties with the subject _David_ and eventually _Apollo_ as well. 
 
+
  QUERY 8
 
 PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
@@ -478,6 +489,7 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 
 
 <a name="cc-anchor"></a>
+
 3. Discussion
 
 - The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, author
@@ -489,7 +501,8 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 
 
 <a name="m-anchor"></a>
-4.  Conclusions and possible future developments
+
+4. Conclusions and possible future developments
 
 - Futher enrichment of the ArCo ontology: continuos update and easy access for laymen
   
