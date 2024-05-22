@@ -1,13 +1,8 @@
----
-
-1.  [Methodology](#custom-anchor)
-2.  [Results and analysis](#c-anchor)
-
-4.  [Conclusions and possible future developments](#m-anchor)
 
 **INDEX**
 
 1. [Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)](#custom-anchor)
+   
 2. [Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)](#c-anchor)  
 
 
@@ -19,7 +14,8 @@
 
 
 <a name="custom-anchor"></a>
-Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)
+
+**Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Ham Peter Von (sec. XIX)**
 
 
 
@@ -104,7 +100,7 @@ We use the LLMs Gemini and ChatGPT in order to enrich the information regarding 
 
 We use the zero-shot prompting technique starting from the question _Could you please tell me the exact place in which the stamp 'Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)' is kept?_.
 
-<a name="c-anchor"></a>
+
 
 **-Results and analysis:**
 ChatGPT provides us with a wrong answer, while Gemini answers correctly:_The record specifies that the print "Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)" is kept at the Istituto di Belle Arti (Institute of Fine Arts) located on Via Duomo, 17, Vercelli (VC), Italy [source:catalogo.beniculturali.it]_.
@@ -187,8 +183,8 @@ This triple links the Michelangelo and Halm Peter Von's artwork to its location,
 
 
 <a name="c-anchor"></a>
-Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)
-**David-Apollo (statua) di Buonarroti Michelangelo (sec. XVI)**
+**Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)**
+
 
 - _Step 1_
 
