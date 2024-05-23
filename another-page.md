@@ -1,6 +1,6 @@
 **INDEX**
 <div class="topnav">
-  <a class="active" href="#mm-anchor">Home</a>
+  <a class="active" href="index.md">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
