@@ -114,7 +114,9 @@ We use the LLMs Gemini and ChatGPT in order to enrich the information regarding 
   <img src="https://github.com/capa46/project/assets/170355893/2dd708ce-1138-491c-bb66-7a9f1992b720" width="800" height="400">
 
 -Gemini
-  <img src="https://github.com/capa46/project/assets/170355893/6a7d744e-c658-45ff-ae39-43b6a1974af2" width="800" height="400">
+  <img src="https://github.com/capa46/project/assets/170109035/4c217fb1-e381-426e-b0ac-44e87eac773e" width="800" height="400">
+
+
 
 We use the **zero-shot prompting technique** starting from the question _Could you please tell me the exact place in which the stamp 'Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)' is kept?_.
 
@@ -151,7 +153,7 @@ ChatGPT is able to provide a correct answer as it creates a triple. Nonetheless,
 
 <img src="https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c" width="1000" height="500">
 
-<img src="https://github.com/capa46/project/assets/170109035/c124519e-49f4-43ef-b9a2-98db623f31cc" width="900" height="200"> 
+<img src="https://github.com/capa46/project/assets/170109035/08d009b4-3c3b-436d-b201-f8e834ee9ff6" width="900" height="200"> 
 
 
 
