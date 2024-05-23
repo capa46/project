@@ -22,7 +22,7 @@
 
 
 <a name="mm-anchor"></a>
-<h4 style="background-color:yellow ;">1. Methodology</h4>
+<h4 style="color:green ;">1. Methodology</h4>
 
 
 _Used tools_: the ArCo SPARQL endpoint: https://dati.cultura.gov.it/sparql, the ArCo ontologies documentation: http://wit.istc.cnr.it/arco/, LLMs (Gemini and ChatGPT), HTML, GitHub
@@ -35,7 +35,7 @@ _External resources_: Google
 
 
 <a name="custom-anchor"></a>
-<h4 style="background-color:yellow ;">2. Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Halm Peter Von (sec. XIX)</h4>
+<h4 style="color:green ;">2. Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Halm Peter Von (sec. XIX)</h4>
 
 <div style= "text-align: center;">
 <img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250">
@@ -230,7 +230,7 @@ This triple would link Michelangelo and Halm Peter Von's artwork to its location
 
 
 <a name="c-anchor"></a>
-<h4 style="background-color:yellow ;">3. Cultural Property "David-Apollo", Michelangelo Buonarroti (sec. XVI)</h4>
+<h4 style="color:green ;">3. Cultural Property "David-Apollo", Michelangelo Buonarroti (sec. XVI)</h4>
 
 <div style= "text-align: center;">
 <img src="https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be" width="200" height="400">
@@ -542,7 +542,7 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 
 
 <a name="cc-anchor"></a>
-<h4 style="background-color:yellow ;">4. Discussion</h4>
+<h4 style="color:green ;">4. Discussion</h4>
 
 
 - The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, author.
@@ -554,7 +554,7 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 
 
 <a name="m-anchor"></a>
-<h4 style="background-color:yellow ;">5. Conclusions and possible future developments</h4>
+<h4 style="color:green ;">5. Conclusions and possible future developments</h4>
 
 Summing up: 
 
