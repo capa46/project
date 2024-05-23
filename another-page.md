@@ -10,7 +10,7 @@
 
 
 
-<div style="margin-top: 100px;"></div> 
+<div style="margin-top: 80px;"></div> 
 
 **METHODOLOGY**
 
@@ -25,6 +25,7 @@ _External resources_: Google
 
 
 <img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250">
+
 
 
 - _Step 1_: We want to find Michelangelo's IRI. To do so, we run a SPARQL query based on the artwork _Tondo Doni_ that we are sure was authored by Michelangelo.
@@ -89,7 +90,7 @@ FILTER(REGEX(?l, "pietà", "i"))
 }
 
 
-We employ the keyword **DISTINCT** to eliminate duplicates and by doing so we get 7 results. Among them, we selct the artwork _Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)_, from which we retrieve the cultural property IRI and the 2nd author's (Halm Peter Von) IRI.
+We employ the keyword **DISTINCT** to eliminate duplicates and by doing so we get 7 results. Among them, we select the artwork _Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)_, from which we retrieve the cultural property IRI and the 2nd author's (Halm Peter Von) IRI.
 
 
 Results:
