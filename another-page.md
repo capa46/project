@@ -19,7 +19,7 @@
 <h4 style="background-color:yellow ;">1. Methodology</h4>
 
 
-_Used tools_: SPARQL, LLMs (Gemini and ChatGPT), ArCo Ontology and Knowledge Graph, HTML, GitHub
+_Used tools_: the ArCo SPARQL endpoint: https://dati.cultura.gov.it/sparql, the ArCo ontologies documentation: http://wit.istc.cnr.it/arco/, LLMs (Gemini and ChatGPT), HTML, GitHub
 
 _External resources_: Google
 
@@ -33,6 +33,7 @@ _External resources_: Google
 
 
 <img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250">
+
 
 
 
@@ -65,8 +66,10 @@ FILTER(REGEX(?l, "tondo doni", "i"))
 LIMIT 20
 
 
+
 Result:
 <a href= "https://w3id.org/arco/resource/Agent/56d8ee32618291c12ae4f357db49c221">IRI Michelangelo</a>
+
 
 
 - _Step 2_: We are curious to know more about Michelangelo's artwork _Pietà_. We therefore explore ArCo by using the following query:
@@ -98,6 +101,7 @@ FILTER(REGEX(?l, "pietà", "i"))
 }
 
 
+
 We employ the keyword **DISTINCT** to eliminate duplicates and by doing so we get 7 results. Among them, we select the artwork _Pietà, Pietà (stampa) di Buonarroti Michelangelo, Halm Peter Von (sec. XIX)_, from which we retrieve the cultural property IRI and the 2nd author's (Halm Peter Von) IRI.
 
 
@@ -115,9 +119,11 @@ Results:
 We use the LLMs Gemini and ChatGPT in order to enrich the information regarding the location of the artwork _Pietà (stampa)_:
 
 -ChatGPT  
+
   <img src="https://github.com/capa46/project/assets/170355893/2dd708ce-1138-491c-bb66-7a9f1992b720" width="800" height="400">
 
 -Gemini
+
   <img src="https://github.com/capa46/project/assets/170109035/4c217fb1-e381-426e-b0ac-44e87eac773e" width="800" height="400">
 
 
@@ -153,7 +159,7 @@ _Based on the previous example that I gave you, could you transform the followin
 **Results and analysis:**
 
 Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same prompt. 
-ChatGPT is able to provide a correct answer as it creates a triple. Nonetheless, it uses wrong IRIs - that is, Halm Peter Von's IRI and the IRI of the Istituto di Belle Arti.
+ChatGPT is able to provide a correct answer as it creates a triple. Nonetheless, it uses wrong IRIs - that is, the IRI of the stamp and the one of the Istituto di Belle Arti.
 
 <img src="https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c" width="1000" height="500">
 
@@ -196,6 +202,8 @@ UNION {?culturalProperty a-cd:hasAuthor agent:8603b17b6451202a8d27734812dae423}
 
 }
 
+
+
 We get a single result, which corresponds to _a cis:GeographicalFeature_ and returns the <a href= "https://w3id.org/arco/resource/GeographicalFeature/39d1317c461740217063d916af2248bb">IRI of Vercelli</a> .
 
 
@@ -223,6 +231,7 @@ This triple would link Michelangelo and Halm Peter Von's artwork to its location
 - _Step 1_
 
 We now want to find the artwork _David_ authored by Michelangelo Buonarroti using the following query:
+
 
 
 QUERY 4
@@ -253,16 +262,18 @@ FILTER(REGEX(?l, "david", "i"))
 LIMIT 10
 
 
+
+
 Among the results, we choose the _David-Apollo_ statue with <a href= "https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607">this IRI</a>.
 
 After analysing the data, we focus our attention on the property _a-cd:hasCommission_ that refers to _Committenza 1 del bene 0900286607_ with <a href= "https://w3id.org/arco/resource/Commission/0900286607-1">this IRI</a>.
 
 
-Since the information is not clear enough, we carry out a research on the committent of this statue. On the webpage of the <a href= "http://www.polomuseale.firenze.it/areastampa/files/53185184f1c3bc7c07000000/02%20SALA%20MICHE_PDF.pdf">Museo Nazionale del Bargello</a>, we discover that the committent was Baccio Valori. 
+Since the information is not clear enough, we carry out a research on the committent of this statue. In a brochure of the <a href= "http://www.polomuseale.firenze.it/areastampa/files/53185184f1c3bc7c07000000/02%20SALA%20MICHE_PDF.pdf">Museo Nazionale del Bargello</a>, we discover that the committent was Baccio Valori. 
 
 - _Step 2_
 
-We now decide to ask ChaptGPT and Gemini to retrieve further information on the committent by using the **self-consistency prompting technique**. We ask the same question three times, but formulating it with different words and opening each time a new chat: 
+We now decide to ask ChatGPT and Gemini to retrieve further information on the committent by using the **self-consistency prompting technique**. We ask the same question three times, but formulating it with different words and opening each time a new chat: 
 
 _Q: Who commissioned the artwork Tondo Doni authored by Michelangelo?
 A: The artwork Tondo Doni was commissioned by a rich merchant named Agnolo Doni._
@@ -273,9 +284,10 @@ ChatGPT answer 1
 <img src="https://github.com/capa46/project/assets/170109035/93b1246f-3268-48e1-a8b3-84089d36b0cc" width="800" height="400">
 
 Gemini answer 1
+
 <img src="https://github.com/capa46/project/assets/170109035/c149da8f-082d-4773-8e81-419711a6e053" width="800" height="400"> 
 
-The answer provided by Gemini is wrong and murky. On the other hand, the one given by ChaptGPT is correct.
+The answer provided by Gemini is wrong and murky. On the other hand, the one given by ChatGPT is correct.
 Thus, we decide to phrase the following questions (2,3) in a more explicit way, but using different words and chats. 
 
 _Q: Who commissioned the artwork Tondo Doni authored by Michelangelo?
@@ -296,17 +308,20 @@ ChatGPT - Answer 3
 
 
 Gemini - Answer 2
+
 <img src="https://github.com/capa46/project/assets/170109035/f5dc08d6-b0ee-49ce-9d17-acc689b4b4ac" width="800" height="400">
 
 
 Gemini - Answer 3 
+
 <img src="https://github.com/capa46/project/assets/170109035/93ac665b-f562-4711-87c6-506484e2431c" width="800" height="400">
 
-We observe that Gemini replies correctly to the two last questions phrased in a more specific way but with different words, which demonstrates its self-consistency. On the other hand, ChatGPT is not coherent because it provides the wrong answer to the third question. Overall, we can highlight the fact that both LLMs outputs are not always co. 
-nsistent. 
+We observe that Gemini replies correctly to the two last questions phrased in a more specific way but with different words, which demonstrates its self-consistency. On the other hand, ChatGPT is not coherent because it provides the wrong answer to the third question. Overall, we can highlight the fact that both LLMs outputs are not always consistent. 
+
 - _Step 3_
 
-We are now interested in finding out in which events the cultural property _David-Apollo_ was involved. To do so, we used the following query.
+We are now interested in finding out in which events the cultural property _David-Apollo_ was involved. To do so, we use the following query:
+
 
 
 QUERY 5 
@@ -350,13 +365,14 @@ ORDER BY DESC(?eventName)
 
 ![10](https://github.com/capa46/project/assets/170109035/df5f50a6-528b-4635-aff7-ec45e2fb6e18)
 
-As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of events are spelled differently leading the knowledge graph to assume that they are different entities.
+As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of the events are spelled differently, leading the knowledge graph to assume that they are different entities.
 
 In order to enrich and improve the structure of the knowledge graph, we had considered using the property _owl:sameAs_ to connect the events reporting the same name. However, even though the names of the events are spelled differently, their IRIs are actually the same. Therefore, the property _owl:sameAs_ cannot be applied and the most optimal solution is to correct all discrepancies in the event names, so as to eliminate and avoid duplicates.
 
+
 - _Step 4_
 
-We want to know how the event _L'ombra del genio. MIchelangelo e l'arte a Firenze 1537-1631_ was reviewed. We apply the **few-shot technique** to the LLMs ChatGPT and Gemini as to find out whether it was successful or not : 
+We want to know how the event _L'ombra del genio. MIchelangelo e l'arte a Firenze 1537-1631_ was reviewed. We apply the **few-shot technique** to the LLMs ChatGPT and Gemini as to find out whether it was successful or not: 
 
 
 _Based on the following examples, tell me if the review about the event "L'ombra del genio. Michelangelo e l'arte a Firenze 1537-1631" reported in the last paragraph is positive or negative. Q: The last novel by J.K. Rowling was really interesting because all the characters were complex and well-developed. // Positive_
@@ -376,13 +392,13 @@ Gemini
 
 ![YY](https://github.com/capa46/project/assets/170109035/c216c698-902c-4d59-bf39-bf85e52dc0c1)
 
-Both LLMs reply correctly to our prompting and understant that the event was successful. 
+Both LLMs reply correctly to our prompting and understand that the event was successful. 
 
 - _Step 5_
 
-We now focus on the subject of the statue.
+As final step of our research, we now focus on the subject of the statue.
 The description of the artwork explains that the subject is inspired by both the biblical character David and the Greek god Apollo.  
-At the property _a-cd:hasSubject_, we notice that the two figures are indicated as a single entity. However, we want to enrich the data by specifying that the two figures could also be two separate subjects. In this way, the statue can be one of the outputs of a query; otherwise, it would be discarded because the two figures are not labelled individually.
+At the property _a-cd:hasSubject_, we notice that the two figures are indicated as a single entity. However, we want to enrich the data by specifying that the two figures could also be two separate subjects. In this way, the statue could be one of the outputs of a query; otherwise, it would be discarded because the two figures are not labelled individually.
 We therefore use the following query to find the IRI of the entity David (then doing the same for Apollo). Assuming that we will get many results, we use the keyword **ORDER BY ASC** to go through the different results more easily.
 
 
@@ -411,6 +427,8 @@ FILTER(REGEX(?slabel,"david", "i"))
 ORDER BY ASC (?sub)
 
 Result: <a href= "https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427">IRI of David</a>
+
+
 
 
 
@@ -450,7 +468,7 @@ https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607  a-cd:hasSu
 
 https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427
 
-
+<div style="margin-top: 40px;"></div>  
 https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607  a-cd:hasSubject 
 
 https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600
@@ -499,7 +517,7 @@ https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45 a-cd:has
 
 https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427
 
-
+<div style="margin-top: 40px;"></div>
 https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45 a-cd:hasSubject 
 
 https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b7600
@@ -528,8 +546,17 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 <a name="m-anchor"></a>
 <h4 style="background-color:yellow ;">5. Conclusions and possible future developments</h4>
 
+Summing up: 
 
-- Futher enrichment of the ArCo ontology: constant update and easy access for laymen.
+- Previuos analysis of the entities 
+
+- Creation of new triples to fill knowledge gaps 
+
+- Correction of existing data
+
+ Future developments:  
+
+- Further enrichment of the ArCo ontology: constant update and easy access for laymen.
   
 - Future development of LLMs. 
 
