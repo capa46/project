@@ -38,7 +38,7 @@ _External resources_: Google
 <h4 style="background-color:yellow ;">2. Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Halm Peter Von (sec. XIX)</h4>
 
 
-<img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250">
+<img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250" class="center">
 
 
 
@@ -232,7 +232,7 @@ This triple would link Michelangelo and Halm Peter Von's artwork to its location
 <a name="c-anchor"></a>
 <h4 style="background-color:yellow ;">3. Cultural Property "David-Apollo", Michelangelo Buonarroti (sec. XVI)</h4>
 
-<img src="https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be" width="200" height="400">
+<img src="https://github.com/capa46/project/assets/170109035/9e13c0ed-731d-459a-b603-5eba791f84be" width="200" height="400" class="center">
 
 - _Step 1_
 
