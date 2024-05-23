@@ -1,10 +1,10 @@
-**INDEX**
+
 <div class="topnav">
   <a class="active" href="index.md">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
 </div>
+
+
+**INDEX**
 
 1. [Methodology](#mm-anchor)
    
@@ -16,7 +16,7 @@
 
 5. [Conclusions and possible future developments](#m-anchor)
 
-6. [Main Page](index.md)
+
 
 <div style="margin-top: 80px;"></div> 
 
