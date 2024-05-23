@@ -1,6 +1,6 @@
 
 <div class="topnav">
-  <a class="active" href="index.md">Home</a>
+  <a class="active" href="https://capa46.github.io/project/">Home</a>
 </div>
 
 
