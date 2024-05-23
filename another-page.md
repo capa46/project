@@ -20,6 +20,10 @@ _Used tools_: HTML, GitHub, SPARQL, LLMs (Gemini and ChaptGPT), ArCo Ontology an
 _External resources_: Google
 
 
+
+
+
+
 <a name="custom-anchor"></a>
 <h4 style="background-color:yellow ;">1. Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Ham Peter Von (sec. XIX)</h4>
 
