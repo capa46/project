@@ -146,7 +146,8 @@ _Based on the previous example that I gave you, could you transform the followin
 
 **Results and analysis:**
 
-Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same prompt and it provides a correct answer as it is able to create a triple, even though it uses wrong IRIs, that is Halm Peter Von's IRI and the IRI of the Istituto di Belle Arti.
+Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same prompt. 
+ChatGPT is able to provide a correct answer as it creates a triple. Nonetheless, it uses wrong IRIs - that is, Halm Peter Von's IRI and the IRI of the Istituto di Belle Arti.
 
 <img src="https://github.com/capa46/project/assets/170355893/c7d03633-dcba-4dbc-a4d2-d84ae978b48c" width="1000" height="500">
 
@@ -156,7 +157,7 @@ Gemini is not able to provide a proper answer. Thus, we give ChatGPT the same pr
 
 - _Step 5_
 
-Since the triple's structure proposed by ChatGPT is correct, we want to use it and therefore need to substitute the wrong IRIs with the correct ones. That is why we opt for retrieving the IRI of the Istituto di Belle Arti of Vercelli in the ArCo ontology, assuming that it exists.
+Since the triple structure proposed by ChatGPT is correct, we want to use it. We need to substitute the wrong IRIs with the correct ones. That is why we opt for retrieving the IRI of the Istituto di Belle Arti of Vercelli in the ArCo ontology, assuming that it exists.
 We focus our query on the cultural properties located in Vercelli and authored by both Michelangelo and Halm Peter Von by using the keyword **UNION**:
 
 
@@ -194,11 +195,11 @@ We get a single result, which corresponds to _a cis:GeographicalFeature_ and ret
 
 **Results and analysis:**
 
-Consequently, it can be said that there is no IRI for the Istituto di Belle Arti of Vercelli. For this reason, we would suggest to create a new IRI for this Institute in order to have the possibility to use it for the following triple and enhance the knowledge graph:
+Consequently, it can be said that there is no IRI for the Istituto di Belle Arti of Vercelli. For this reason, we would suggest to create a new IRI for this Institute in order to use it for the following triple and thus enhance the knowledge graph:
 
 _HistoricOrArtisticProperty:0100214952 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite:XXX_
 
-This triple would link Michelangelo and Halm Peter Von's artwork to its location - that is, the Instituto di Belle Arti of Vercelli, thanks to the property _a-loc:hasCulturalInstituteOrSite_.
+This triple would link Michelangelo and Halm Peter Von's artwork to its location - that is, the Instituto di Belle Arti of Vercelli thanks to the property _a-loc:hasCulturalInstituteOrSite_.
 
 
 
@@ -255,7 +256,7 @@ Since the information is not clear enough, we carry out a research on the commit
 
 - _Step 2_
 
-We now decide to ask ChaptGPT and Gemini to retrieve further information on the committent by using the **self-consistency prompting technique**. We ask the same question three times but formulating it with different words and opening each time a new chat: 
+We now decide to ask ChaptGPT and Gemini to retrieve further information on the committent by using the **self-consistency prompting technique**. We ask the same question three times, but formulating it with different words and opening each time a new chat: 
 
 _Q: Who commissioned the artwork Tondo Doni authored by Michelangelo?
 A: The artwork Tondo Doni was commissioned by a rich merchant named Agnolo Doni._
@@ -295,8 +296,8 @@ Gemini - Answer 2
 Gemini - Answer 3 
 <img src="https://github.com/capa46/project/assets/170109035/93ac665b-f562-4711-87c6-506484e2431c" width="800" height="400">
 
-We observe that Gemini replies correctly to the two last questions phrased in a more specific way but with different words, which demonstrates its self-consistency. On the other hand, ChatGPT is not coherent because it provides the wrong answer to the third question. Overall, we can hilighlight the fact that both LLMs outputs are not always coherent. 
-
+We observe that Gemini replies correctly to the two last questions phrased in a more specific way but with different words, which demonstrates its self-consistency. On the other hand, ChatGPT is not coherent because it provides the wrong answer to the third question. Overall, we can highlight the fact that both LLMs outputs are not always co. 
+nsistent. 
 - _Step 3_
 
 We are now interested in finding out in which events the cultural property _David-Apollo_ was involved. To do so, we used the following query.
@@ -345,7 +346,7 @@ ORDER BY DESC(?eventName)
 
 As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of events are spelled differently leading the knowledge graph to assume that they are different entities.
 
-In order to enrich and improve the structure of the knowledge graph, we had considered using the property _owl:sameAs_ to connect the events reporting the same name. However, even though the names of the events are spelled differently, their IRIs are actually the same. Therefore, the property _owl:sameAs_ cannot be applied and consequently the most optimal solution is to correct the discrepancies in the event names, so as to eliminate duplicates.
+In order to enrich and improve the structure of the knowledge graph, we had considered using the property _owl:sameAs_ to connect the events reporting the same name. However, even though the names of the events are spelled differently, their IRIs are actually the same. Therefore, the property _owl:sameAs_ cannot be applied and the most optimal solution is to correct all discrepancies in the event names, so as to eliminate and avoid duplicates.
 
 - _Step 4_
 
@@ -452,8 +453,8 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 
 - _Step 6_
 
- Are there other artworks with the same problem as above? To find it out, we use the keyword **OPTIONAL** 
- that enables to retrieve cultural properties with the subject _David_ and eventually _Apollo_ as well. 
+ Are there other artworks with the same problem? To find it out, we use the keyword **OPTIONAL** 
+ that enables to retrieve cultural properties with the subject _David_ and eventually _Apollo_. 
 
 
 QUERY 8
@@ -510,9 +511,9 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 <h4 style="background-color:yellow ;">3. Discussion</h4>
 
 
-- The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, author
+- The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, author.
   
-- LLMs are useful but they must be used carefully and they must be precisely instructed
+- LLMs are useful but they must be used carefully and they must be precisely instructed.
   
 
 <div style="margin-top: 50px;"></div> 
@@ -522,9 +523,9 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 <h4 style="background-color:yellow ;">4. Conclusions and possible future developments</h4>
 
 
-- Futher enrichment of the ArCo ontology: constant update and easy access for laymen
+- Futher enrichment of the ArCo ontology: constant update and easy access for laymen.
   
-- Future development of LLMs 
+- Future development of LLMs. 
 
 
 
