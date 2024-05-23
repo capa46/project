@@ -37,9 +37,9 @@ _External resources_: Google
 <a name="custom-anchor"></a>
 <h4 style="background-color:yellow ;">2. Cultural Property "Pietà (stampa)", Michelangelo Buonarroti & Halm Peter Von (sec. XIX)</h4>
 
-
-<img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250" class="center">
-
+<div style= "text-align: center;">
+<img src="https://github.com/capa46/project/assets/170109035/e2683111-a558-49de-8821-497a859a3710" width="200" height="250">
+</div>
 
 
 
