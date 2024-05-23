@@ -429,6 +429,7 @@ ORDER BY ASC (?sub)
 Result: <a href= "https://w3id.org/arco/resource/Lombardia/Subject/172522ec1028ab781d9dfd17eaca4427">IRI of David</a>
 
 
+<div style="margin-top: 40px;"></div> 
 
 
 
