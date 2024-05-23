@@ -510,7 +510,7 @@ LIMIT 100
 
 
 
-The answer is yes: we find the artwork _Apollo o David Con La Viola da Braccio_ (<a href= "https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45">IRI</a>) that has the same problem. Thus, we create other triples to disambiguate and make explicit the existance of the two figures as subjects. 
+The answer is yes: we find the artwork _Apollo o David Con La Viola da Braccio_ (<a href= "https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45">IRI</a>) that has the same problem. Thus, we create other triples to disambiguate and make explicit the existence of the two figures as subjects. 
 
 Triples: 
 
