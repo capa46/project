@@ -1,5 +1,10 @@
 **INDEX**
-
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
 1. [Methodology](#mm-anchor)
    
 2. [Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Halm Peter Von (sec. XIX)](#custom-anchor)
