@@ -7,7 +7,7 @@ layout: default
 
 ArCo: the knowledge graph of the Italian Cultural Heritage
 
-Large Language Models: Gemini and ChaptGPT
+Large Language Models: Gemini and ChatGPT
 
 <h3 style="color: blue;">-Team</h3>
 
