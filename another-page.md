@@ -372,7 +372,7 @@ In order to enrich and improve the structure of the knowledge graph, we had cons
 
 - _Step 4_
 
-We want to know how the event _L'ombra del genio. MIchelangelo e l'arte a Firenze 1537-1631_ was reviewed. We apply the **few-shot technique** to the LLMs ChatGPT and Gemini as to find out whether it was successful or not: 
+We want to know how the event _L'ombra del genio. MIchelangelo e l'arte a Firenze 1537-1631_ was reviewed. We apply the **few-shot prompting technique** to the LLMs ChatGPT and Gemini as to find out whether it was successful or not: 
 
 
 _Based on the following examples, tell me if the review about the event "L'ombra del genio. Michelangelo e l'arte a Firenze 1537-1631" reported in the last paragraph is positive or negative. Q: The last novel by J.K. Rowling was really interesting because all the characters were complex and well-developed. // Positive_
