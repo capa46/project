@@ -1,5 +1,3 @@
-layout:default
-
 
 4. Discussion
    
