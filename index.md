@@ -28,7 +28,7 @@ Michelangelo's artworks: an in-depth analysis of _Pietà (stampa)_ and _David-Ap
   <!-- Header -->
   <header class="w3-container w3-center w3-padding-48 w3-white">
     <h1 class="w3-xxxlarge"><b>Michelangelo's artworks</b></h1>
-    <h6>OUR PROJECT. <span class="w3-tag">Let's go!</span></h6>
+    <h6>Our porject.<span class="w3-tag">Let's go!</span></h6>
   </header>
 
 [REPORT](another-page.md)
