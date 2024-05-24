@@ -1,3 +1,7 @@
+---
+layout: default
+title: Final step
+---
 
 4. Discussion
    
