@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+
 
 4. Discussion
    
