@@ -1,6 +1,7 @@
 
 <div class="topnav">
   <a class="active" href="https://capa46.github.io/project/">Home</a>
+  
    <a class="active" href="https://capa46.github.io/project/page2.html">Final step</a>
 </div>
 
@@ -19,7 +20,7 @@
 <h4 style="color:green ;">1. Methodology</h4>
 
 
-- Making hypothesis
+- Making hypotheses
 
 - Looking for the data in the ArCo ontologies documentation: http://wit.istc.cnr.it/arco/ 
 
