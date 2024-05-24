@@ -551,7 +551,7 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 <a name="cc-anchor"></a>
 <h4 style="color:green ;">4. Discussion</h4>
 
-- Challenges we faced and solutions:
+Challenges we faced and solutions:
 
  1. The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, authors.
 
