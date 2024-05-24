@@ -536,7 +536,7 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 
 
 
-
+  <div style="margin-top: 40px;"></div> 
 <div style="text-align: right;">
   <a href="https://capa46.github.io/project/page2.html">Final step</a>
 </div>
