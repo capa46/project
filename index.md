@@ -32,7 +32,7 @@ Michelangelo's artworks: an in-depth analysis of _Pietà (stampa)_ and _David-Ap
 
 
 
-[OUR PROJECT](another-page.md)
+[OUR PROJECT STEP BY STEP](another-page.md)
 1. Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Halm Peter Von (sec. XIX)
 2. Cultural Property _David-Apollo_, Michelangelo Buonarroti (sec. XVI)
 
