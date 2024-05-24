@@ -24,6 +24,7 @@ Michelangelo's artworks: an in-depth analysis of _Pietà (stampa)_ and _David-Ap
 - Retrieving useful information using LLMs
   
 <div style="margin-top: 40px;"></div> 
+<span class="w3-tag">Let's go!</span></h6>
 
 [OUR PROJECT: REPORT](another-page.md)
 
