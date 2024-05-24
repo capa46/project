@@ -5,7 +5,7 @@
 </div>
 
 
-**INDEX**
+<h3 style="color:green ;">INDEX</h3>
 
 1. [Methodology](#mm-anchor)
    
