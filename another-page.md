@@ -12,14 +12,7 @@
 2. [Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Halm Peter Von (sec. XIX)](#custom-anchor)
    
 3. [Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)](#c-anchor)
-   
-4. [Discussion](#cc-anchor) 
-
-5. [Conclusions and possible future developments](#m-anchor)
-
-
-
-<div style="margin-top: 80px;"></div> 
+   <div style="margin-top: 80px;"></div> 
 
 
 <a name="mm-anchor"></a>
@@ -545,44 +538,6 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 
 
 
-
-<div style="margin-top: 50px;"></div> 
-
-
-<a name="cc-anchor"></a>
-<h4 style="color:green ;">4. Discussion</h4>
-
-Challenges we faced and solutions:
-
- 1. The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, authors.
-
-    Find the right information to avoid wrong queries > run different queries
-
- 2. LLMs are useful but they must be used carefully and they must be precisely instructed.
-  
-    ChatGPT and Gemini bugs > correct them or ask other questions 
-  
-
-  
-<div style="margin-top: 50px;"></div> 
-
-
-<a name="m-anchor"></a>
-<h4 style="color:green ;">5. Conclusions and possible future developments</h4>
-
-Summing up: 
-
-- Previuos analysis of the entities 
-
-- Creation of new triples to fill knowledge gaps 
-
-- Correction of existing data
-
- Future developments:  
-
-- Further enrichment of the ArCo ontology: constant update and easy access for laymen.
-  
-- Future development of LLMs 
 
 
 
