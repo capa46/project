@@ -11,7 +11,7 @@
    
 2. [Cultural Property _Pietà (stampa)_, Michelangelo Buonarroti & Halm Peter Von (sec. XIX)](#custom-anchor)
    
-3. [Cultural Property _David-Apollo_ , Michelangelo Buonarroti (sec. XVI)](#c-anchor)
+3. [Cultural Property _David-Apollo_, Michelangelo Buonarroti (sec. XVI)](#c-anchor)
    <div style="margin-top: 80px;"></div> 
 
 
