@@ -1,3 +1,5 @@
+theme: jekyll-theme-cayman
+
 4. Discussion
    
 Challenges we faced and solutions:
