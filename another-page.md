@@ -551,12 +551,18 @@ https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc65dba7ccb9aa5c5b760
 <a name="cc-anchor"></a>
 <h4 style="color:green ;">4. Discussion</h4>
 
+- Challenges we faced and solutions:
 
-- The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, author.
+ 1. The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, authors.
+
+    Find the right information to avoid wrong queries > run different queries
+
+ 2. LLMs are useful but they must be used carefully and they must be precisely instructed.
   
-- LLMs are useful but they must be used carefully and they must be precisely instructed.
+    ChatGPT and Gemini bugs > correct them or ask other questions 
   
 
+  
 <div style="margin-top: 50px;"></div> 
 
 
@@ -575,7 +581,7 @@ Summing up:
 
 - Further enrichment of the ArCo ontology: constant update and easy access for laymen.
   
-- Future development of LLMs. 
+- Future development of LLMs 
 
 
 
