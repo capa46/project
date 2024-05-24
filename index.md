@@ -9,13 +9,13 @@ ArCo: the knowledge graph of the Italian Cultural Heritage
 
 Large Language Models: Gemini and ChatGPT
 
-<h3 style="color: green;">Team</h3>
-
-Sara Speggiorin & Sara Paglia 
-
 <h3 style="color: green;">Topic</h3> 
 
 Michelangelo's artworks: an in-depth analysis of _Pietà (stampa)_ and _David-Apollo_ 
+
+<h3 style="color: green;">Team</h3>
+
+Sara Speggiorin & Sara Paglia 
 
 <h3 style="color: green;">Purpose</h3>
 
