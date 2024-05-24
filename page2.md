@@ -32,7 +32,7 @@ Summing up:
 
 - Previuos analysis of the entities 
 
-- Creation of new triples to fill knowledge gaps 
+- Creation of new triples to fill in knowledge gaps 
 
 - Correction of existing data
 
