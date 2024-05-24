@@ -27,7 +27,7 @@
 
 - Realizing queries using the ArCo SPARQL endpoint: https://dati.cultura.gov.it/sparql  
 
-- Verifying them on the ArCo ontology
+- Verifying if the retrieved data could actually back up our hypothesis or not. 
 
 - Using LLMs 
 
