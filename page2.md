@@ -12,11 +12,11 @@
 
 Challenges we faced and solutions:
 
- 1. The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, authors
+ - The knowledge graph is still lacking some more detailed information. E.g.: lack of IRIs, authors
 
     Finding the right information to avoid wrong queries > running different queries
 
- 2. LLMs are useful but they must be used carefully and they must be precisely instructed
+ - LLMs are useful but they must be used carefully and they must be precisely instructed
   
     ChatGPT and Gemini bugs > correcting them or asking other questions 
   
