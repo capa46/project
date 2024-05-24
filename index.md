@@ -13,15 +13,15 @@ Large Language Models: Gemini and ChatGPT
 
 Michelangelo's artworks: an in-depth analysis of _Pietà (stampa)_ and _David-Apollo_ 
 
-<h3 style="color: green;">Team</h3>
-
-Sara Speggiorin & Sara Paglia 
-
 <h3 style="color: green;">Purpose</h3>
 
 - Exploring the ArCo Ontology to find the two cultural properties 
 - Enriching the ArCo knowledge graph with further details about the two cultural properties
 - Retrieving useful information using LLMs
+
+<h3 style="color: green;">Team</h3>
+
+Sara Speggiorin & Sara Paglia 
   
 <div style="margin-top: 40px;"></div> 
 
