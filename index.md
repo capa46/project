@@ -37,7 +37,7 @@ Michelangelo's artworks: an in-depth analysis of _Pietà (stampa)_ and _David-Ap
 2. Cultural Property _David-Apollo_, Michelangelo Buonarroti (sec. XVI)
 
 
-
+[OUR PROJECT STEP BY STEP 2](page2.md)
 
 
 
