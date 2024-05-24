@@ -29,13 +29,15 @@
 
 - Looking for the data in the ArCo ontologies documentation: http://wit.istc.cnr.it/arco/ 
 
-- Realizing the query using the ArCo SPARQL endpoint: https://dati.cultura.gov.it/sparql 
+- Realizing queries using the ArCo SPARQL endpoint: https://dati.cultura.gov.it/sparql 
 
-- Verifying it on the ArCo ontology
+- Verifying them on the ArCo ontology
+
+- Using LLMs 
 
 - Creating triples to enrich the ArCo ontology
 
-- Using LLMs 
+
 
 
 
