@@ -25,12 +25,17 @@
 <h4 style="color:green ;">1. Methodology</h4>
 
 
-_Used tools_: the ArCo SPARQL endpoint: https://dati.cultura.gov.it/sparql, the ArCo ontologies documentation: http://wit.istc.cnr.it/arco/, LLMs (Gemini and ChatGPT), HTML, GitHub
+- Making hypothesis
 
-_External resources_: Google
+- Looking for the data in the ArCo ontologies documentation: http://wit.istc.cnr.it/arco/ 
 
+- Realizing the query using the ArCo SPARQL endpoint: https://dati.cultura.gov.it/sparql 
 
+- Verifying it on the ArCo ontology
 
+- Creating triples to enrich the ArCo ontology
+
+- Using LLMs 
 
 
 
