@@ -375,7 +375,7 @@ ORDER BY DESC(?eventName)
 
 ![10](https://github.com/capa46/project/assets/170109035/df5f50a6-528b-4635-aff7-ec45e2fb6e18)
 
-As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of the events are spelled differently, leading the knowledge graph to assume that they are different entities.
+As you can see from the picture, we get multiple results: 3 of them with a certain IRI and 5 of them with another one. This means that there are only two events in which our cultural property is involved. It is likely that the names of the events are spelled differently (e.g. capital letters or different punctuation), leading the knowledge graph to assume that they are different entities.
 
 In order to enrich and improve the structure of the knowledge graph, we had considered using the property _owl:sameAs_ to connect the events reporting the same name. However, even though the names of the events are spelled differently, their IRIs are actually the same. Therefore, the property _owl:sameAs_ cannot be applied and the most optimal solution is to correct all discrepancies in the event names, so as to eliminate and avoid duplicates.
 
