@@ -29,7 +29,7 @@
 
 - Using LLMs 
 
-- Creating triples to enrich the ArCo ontology
+- Creating RDF triples that could be addeded to the knowledge graph
 
 
 
@@ -220,7 +220,7 @@ Consequently, it can be said that there is no IRI for the Istituto di Belle Arti
 
 _HistoricOrArtisticProperty:0100214952 a-loc:hasCulturalInstituteOrSite CulturalInstituteOrSite:XXX_
 
-This triple would link Michelangelo and Halm Peter Von's artwork to its location - that is, the Instituto di Belle Arti of Vercelli thanks to the property _a-loc:hasCulturalInstituteOrSite_.
+This RDF triple would link Michelangelo and Halm Peter Von's artwork to its location - that is, the Instituto di Belle Arti of Vercelli thanks to the property _a-loc:hasCulturalInstituteOrSite_.
 
 
 
@@ -473,7 +473,7 @@ Result: <a href= "https://w3id.org/arco/resource/Lombardia/Subject/31f2385ba9cc6
 
 Now that we have the two single IRIs, we are able to create triples that allow us to link the statue _David-Apollo_ to the two single subjects: 
 
-Triples: 
+RDF triples: 
 
 https://w3id.org/arco/resource/HistoricOrArtisticProperty/0900286607  a-cd:hasSubject 
 
@@ -520,9 +520,9 @@ LIMIT 100
 
 
 
-The answer is yes: we find the artwork _Apollo o David Con La Viola da Braccio_ (<a href= "https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45">IRI</a>) that has the same problem. Thus, we create other triples to disambiguate and make explicit the existence of the two figures as subjects. 
+The answer is yes: we find the artwork _Apollo o David Con La Viola da Braccio_ (<a href= "https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45">IRI</a>) that has the same problem. Thus, we create other RDF triples to disambiguate and make explicit the existence of the two figures as subjects. 
 
-Triples: 
+RDF triples: 
 
 https://w3id.org/arco/resource/Subject/6f0942a99237aefe98047f9d200c4b45 a-cd:hasSubject 
 
